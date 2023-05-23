@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "DF487E9A2A163849007C1A7D"
-               BuildableName = "SHWireGuardKitmacOS.framework"
+               BuildableName = "SHWireGuardKit.framework"
                BlueprintName = "SHWireGuardKitmacOS"
                ReferencedContainer = "container:SHWireGuardKit.xcodeproj">
             </BuildableReference>
@@ -50,7 +50,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "DF487E9A2A163849007C1A7D"
-            BuildableName = "SHWireGuardKitmacOS.framework"
+            BuildableName = "SHWireGuardKit.framework"
             BlueprintName = "SHWireGuardKitmacOS"
             ReferencedContainer = "container:SHWireGuardKit.xcodeproj">
          </BuildableReference>

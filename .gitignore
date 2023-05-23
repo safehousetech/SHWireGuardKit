@@ -3,4 +3,4 @@
 /build
 *.xcframework
 xcuserdata
-SHWireGuardKit.xcframework.zip
+#SHWireGuardKit.xcframework.zip

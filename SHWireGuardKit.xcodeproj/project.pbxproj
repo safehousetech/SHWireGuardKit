@@ -33,7 +33,6 @@
 		DF487EBB2A163849007C1A7D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F8292E55A900D8E9C2 /* Endpoint.swift */; };
 		DF487EBC2A163849007C1A7D /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F7292E55A900D8E9C2 /* IPAddressRange.swift */; };
 		DF487EBD2A163849007C1A7D /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F5292E55A900D8E9C2 /* PrivateKey.swift */; };
-		DF487EBF2A163849007C1A7D /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23187D8B292E5ACD00ED302A /* libwg-go.a */; };
 		DF487ECC2A16410F007C1A7D /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20D8292E558300D8E9C2 /* NotificationToken.swift */; };
 		DF487ED22A16472D007C1A7D /* SHWireGuardKitmacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487EC62A163D14007C1A7D /* SHWireGuardKitmacOS.h */; };
 		DF487EDB2A164AF5007C1A7D /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A20E1292E558300D8E9C2 /* ringlogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -63,10 +62,11 @@
 		DF487EF82A164AF5007C1A7D /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F3292E55A900D8E9C2 /* DNSResolver.swift */; };
 		DF487EF92A164AF5007C1A7D /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20ED292E55A900D8E9C2 /* InterfaceConfiguration.swift */; };
 		DF487EFA2A164AF5007C1A7D /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F5292E55A900D8E9C2 /* PrivateKey.swift */; };
-		DF487EFC2A164AF5007C1A7D /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23187DF6292F60C300ED302A /* libwg-go.a */; };
 		DF487F042A164B41007C1A7D /* SHWireGuardKitiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487F032A164B41007C1A7D /* SHWireGuardKitiOS.h */; };
 		DF62BE7F2A16953E0045030C /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62BE7B2A16952B0045030C /* ErrorNotifier.swift */; };
 		DF62BE802A1695410045030C /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62BE7C2A16952B0045030C /* PacketTunnelProvider.swift */; };
+		DF7C47712A20C43500949CB5 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7C476E2A20BF3000949CB5 /* libwg-go.a */; };
+		DF7C47732A20C44C00949CB5 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7C47722A20C44C00949CB5 /* libwg-go.a */; };
 		DFCEC34D2A1CB91100DD2E1D /* SHWireGuardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFCEC34E2A1CB91300DD2E1D /* SHWireGuardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFCEC34F2A1CC59F00DD2E1D /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62BE7C2A16952B0045030C /* PacketTunnelProvider.swift */; };
@@ -91,11 +91,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		23136B73281697150064EA5C /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../../../../Library/Developer/Xcode/DerivedData/Guardian-gsoeobdtnwvmibbdqxnxnlzogidd/Build/Products/Debug-iphoneos/libwg-go.a"; sourceTree = "<group>"; };
-		23187D8B292E5ACD00ED302A /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../../../../Library/Developer/Xcode/DerivedData/GRDWireGuardKit-crrjejcmjrnwdjfxccgbersxwnsx/Build/Products/Debug/libwg-go.a"; sourceTree = "<group>"; };
 		23187DED292E8F7A00ED302A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		23187DF6292F60C300ED302A /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../../../../Library/Developer/Xcode/DerivedData/GRDWireGuardKit-crrjejcmjrnwdjfxccgbersxwnsx/Build/Products/Debug-iphoneos/libwg-go.a"; sourceTree = "<group>"; };
-		231A20A8292D2BB200D8E9C2 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../../../../Library/Developer/Xcode/DerivedData/GRDWireGuardKit-crrjejcmjrnwdjfxccgbersxwnsx/Build/Products/Debug-iphonesimulator/libwg-go.a"; sourceTree = "<group>"; };
 		231A20D6292E558300D8E9C2 /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		231A20D7292E558300D8E9C2 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
 		231A20D8292E558300D8E9C2 /* NotificationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
@@ -124,7 +120,6 @@
 		231A210B292E55D100D8E9C2 /* x25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x25519.h; sourceTree = "<group>"; };
 		231A2111292E55E000D8E9C2 /* wireguard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wireguard.h; path = wireguard/Sources/WireGuardKitGo/wireguard.h; sourceTree = "<group>"; };
 		23916CCE28378B1F0046A972 /* build_framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_framework.sh; sourceTree = "<group>"; };
-		23C354D427DF55490063D69B /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../../Library/Developer/Xcode/DerivedData/GuardianWireGuard-fgtaxesxbgdigwdbpacsxiplterg/Build/Products/Debug/libwg-go.a"; sourceTree = "<group>"; };
 		DF487EC42A163849007C1A7D /* SHWireGuardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHWireGuardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF487EC62A163D14007C1A7D /* SHWireGuardKitmacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWireGuardKitmacOS.h; sourceTree = "<group>"; };
 		DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWireGuardKit.h; sourceTree = "<group>"; };
@@ -132,6 +127,8 @@
 		DF487F032A164B41007C1A7D /* SHWireGuardKitiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWireGuardKitiOS.h; sourceTree = "<group>"; };
 		DF62BE7B2A16952B0045030C /* ErrorNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorNotifier.swift; sourceTree = "<group>"; };
 		DF62BE7C2A16952B0045030C /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		DF7C476E2A20BF3000949CB5 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../Library/Developer/Xcode/DerivedData/SHWireGuardKit-bjrqdoedgdtnygceezyaalbhmdon/Build/Products/Debug/libwg-go.a"; sourceTree = "<group>"; };
+		DF7C47722A20C44C00949CB5 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../Library/Developer/Xcode/DerivedData/SHWireGuardKit-bjrqdoedgdtnygceezyaalbhmdon/Build/Products/Debug-iphoneos/libwg-go.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF487EBF2A163849007C1A7D /* libwg-go.a in Frameworks */,
+				DF7C47712A20C43500949CB5 /* libwg-go.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF487EFC2A164AF5007C1A7D /* libwg-go.a in Frameworks */,
+				DF7C47732A20C44C00949CB5 /* libwg-go.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,11 +243,8 @@
 		23C354D327DF55490063D69B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				23187DF6292F60C300ED302A /* libwg-go.a */,
-				23187D8B292E5ACD00ED302A /* libwg-go.a */,
-				231A20A8292D2BB200D8E9C2 /* libwg-go.a */,
-				23136B73281697150064EA5C /* libwg-go.a */,
-				23C354D427DF55490063D69B /* libwg-go.a */,
+				DF7C47722A20C44C00949CB5 /* libwg-go.a */,
+				DF7C476E2A20BF3000949CB5 /* libwg-go.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -411,7 +405,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					2302A81927C6B34A009F8664 = {
 						CreatedOnToolsVersion = 13.2;
@@ -591,7 +585,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -649,7 +643,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -734,6 +728,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -742,6 +737,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -752,8 +748,11 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.safehouseapp.SHWireGuardKitmacOS;
 				PRODUCT_NAME = SHWireGuardKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -766,6 +765,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -774,6 +774,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -784,8 +785,11 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.safehouseapp.SHWireGuardKitmacOS;
 				PRODUCT_NAME = SHWireGuardKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -798,25 +802,30 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = FL2NUL637S;
+				DEVELOPMENT_TEAM = Q8Z98UPAA2;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.guardianapp.GRDWireGuardKitiOS;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.safehouseapp.WireGuardKitiOS;
 				PRODUCT_NAME = SHWireGuardKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -831,6 +840,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -838,18 +848,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = com.safehouseapp.SHWireGuardKitiOS;
 				PRODUCT_NAME = SHWireGuardKit;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;

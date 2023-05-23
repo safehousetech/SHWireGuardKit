@@ -16,9 +16,9 @@ FOUNDATION_EXPORT const unsigned char SHWireGuardKitVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <SHWireGuardKit/PublicHeader.h>
 
 // Note from ABG 2023-05-23
-// The required headers from the WireGuard project to make GRDWireGuardKit
+// The required headers from the WireGuard project to make SHWireGuardKit
 // self contained and portable have the imported specifically in the way it is done below
-// and all the headers need to be publically exposed in GRDWireGuardKit so that the
+// and all the headers need to be publically exposed in SHWireGuardKit so that the
 // importing app can use them
 #import "SHWireGuardKitmacOS/WireGuardKitC.h"
 #import <SHWireGuardKitmacOS/wireguard.h>

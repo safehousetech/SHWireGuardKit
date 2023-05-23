@@ -10,9 +10,9 @@
 
 
 // Note from ABG 2023-05-23
-// The required headers from the WireGuard project to make GRDWireGuardKit
+// The required headers from the WireGuard project to make SHWireGuardKit
 // self contained and portable have the imported specifically in the way it is done below
-// and all the headers need to be publically exposed in GRDWireGuardKit so that the
+// and all the headers need to be publically exposed in SHWireGuardKit so that the
 // importing app can use them
 #import "SHWireGuardKit/WireGuardKitC.h"
 #import <SHWireGuardKit/wireguard.h>
