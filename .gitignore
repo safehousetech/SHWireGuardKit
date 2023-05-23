@@ -1,0 +1,6 @@
+.DS_Store
+/SHWireGuardKit.xcodeproj/xcuserdata/cj.xcuserdatad/xcschemes/xcschememanagement.plist
+/build
+*.xcframework
+xcuserdata
+SHWireGuardKit.xcframework.zip
