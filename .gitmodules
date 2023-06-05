@@ -1,4 +1,4 @@
 [submodule "wireguard"]
 	path = wireguard
 	url = https://github.com/safehousetech/wireguard-apple.git
-	branch = master
+	branch = main

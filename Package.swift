@@ -19,7 +19,8 @@ let package = Package(
 	targets: [
 		.binaryTarget(
 			name: "SHWireGuardKit",
-			path: "SHWireGuardKit.xcframework.zip"
+			url: "https://api.github.com/repos/safehousetech/SHWireGuard/releases/assets/122590693.zip",
+			checksum: "7998cb0081ce065aa0bad43a7f34128e2e9470e2ef87a4f717a3a4f4c4f5a461"
 		)
 	]
 )
