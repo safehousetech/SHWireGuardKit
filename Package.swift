@@ -1,4 +1,4 @@
-// swift-tools-version:5.6
+// swift-tools-version:5.8.1
 //
 //  Package.swift
 //  SHWireGuardKit
@@ -19,8 +19,8 @@ let package = Package(
 	targets: [
 		.binaryTarget(
 			name: "SHWireGuardKit",
-			url: "https://api.github.com/repos/safehousetech/SHWireGuard/releases/assets/122590693.zip",
-			checksum: "7998cb0081ce065aa0bad43a7f34128e2e9470e2ef87a4f717a3a4f4c4f5a461"
+			url: "https://api.github.com/repos/safehousetech/SHWireGuard/releases/assets/122611289.zip",
+			checksum: "c0ebecc133705c0581d2404b1709b2b9f395f963921fe480aebab9567f1b3bd2"
 		)
 	]
 )
