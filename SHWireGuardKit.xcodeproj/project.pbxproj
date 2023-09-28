@@ -7,94 +7,74 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF0990202A94E69D00065BC9 /* WireGuardAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09901E2A94E69D00065BC9 /* WireGuardAppError.swift */; };
-		DF0990212A94E69D00065BC9 /* WireGuardAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09901E2A94E69D00065BC9 /* WireGuardAppError.swift */; };
-		DF0990222A94E69D00065BC9 /* WireGuardResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09901F2A94E69D00065BC9 /* WireGuardResult.swift */; };
-		DF0990232A94E69D00065BC9 /* WireGuardResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09901F2A94E69D00065BC9 /* WireGuardResult.swift */; };
-		DF0990312A94E72000065BC9 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0990302A94E72000065BC9 /* LocalizationHelper.swift */; };
-		DF0990322A94E72000065BC9 /* LocalizationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0990302A94E72000065BC9 /* LocalizationHelper.swift */; };
-		DF0990422A94E9CB00065BC9 /* ActivateOnDemandOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09903C2A94E9CB00065BC9 /* ActivateOnDemandOption.swift */; };
-		DF0990432A94E9CB00065BC9 /* ActivateOnDemandOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09903C2A94E9CB00065BC9 /* ActivateOnDemandOption.swift */; };
-		DF0990462A94E9CB00065BC9 /* MockTunnels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09903E2A94E9CB00065BC9 /* MockTunnels.swift */; };
-		DF0990472A94E9CB00065BC9 /* MockTunnels.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09903E2A94E9CB00065BC9 /* MockTunnels.swift */; };
-		DF0990482A94E9CB00065BC9 /* TunnelErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09903F2A94E9CB00065BC9 /* TunnelErrors.swift */; };
-		DF0990492A94E9CB00065BC9 /* TunnelErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09903F2A94E9CB00065BC9 /* TunnelErrors.swift */; };
-		DF09904A2A94E9CB00065BC9 /* TunnelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0990402A94E9CB00065BC9 /* TunnelsManager.swift */; };
-		DF09904B2A94E9CB00065BC9 /* TunnelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0990402A94E9CB00065BC9 /* TunnelsManager.swift */; };
-		DF09904C2A94E9CB00065BC9 /* TunnelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0990412A94E9CB00065BC9 /* TunnelStatus.swift */; };
-		DF09904D2A94E9CB00065BC9 /* TunnelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0990412A94E9CB00065BC9 /* TunnelStatus.swift */; };
-		DF09904F2A94EB7800065BC9 /* TunnelConfiguration+UapiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09904E2A94EB7800065BC9 /* TunnelConfiguration+UapiConfig.swift */; };
-		DF0990502A94EB7800065BC9 /* TunnelConfiguration+UapiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF09904E2A94EB7800065BC9 /* TunnelConfiguration+UapiConfig.swift */; };
-		DF0990522A94F4E800065BC9 /* RecentTunnelsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0990512A94F4E800065BC9 /* RecentTunnelsTracker.swift */; };
-		DF0990532A94F4E900065BC9 /* RecentTunnelsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF0990512A94F4E800065BC9 /* RecentTunnelsTracker.swift */; };
-		DF487E9E2A163849007C1A7D /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A20E1292E558300D8E9C2 /* ringlogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487E9F2A163849007C1A7D /* x25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A210B292E55D100D8E9C2 /* x25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EA12A163849007C1A7D /* key.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A2107292E55D100D8E9C2 /* key.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EA32A163849007C1A7D /* WireGuardKitC.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A2106292E55D100D8E9C2 /* WireGuardKitC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EA42A163849007C1A7D /* wireguard.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A2111292E55E000D8E9C2 /* wireguard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EA62A163849007C1A7D /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DA292E558300D8E9C2 /* TunnelConfiguration+WgQuickConfig.swift */; };
-		DF487EA72A163849007C1A7D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DF292E558300D8E9C2 /* Logger.swift */; };
-		DF487EA82A163849007C1A7D /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 231A2108292E55D100D8E9C2 /* x25519.c */; };
-		DF487EA92A163849007C1A7D /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DE292E558300D8E9C2 /* ringlogger.c */; };
-		DF487EAA2A163849007C1A7D /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F0292E55A900D8E9C2 /* TunnelConfiguration.swift */; };
-		DF487EAB2A163849007C1A7D /* IPAddress+AddrInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F4292E55A900D8E9C2 /* IPAddress+AddrInfo.swift */; };
-		DF487EAC2A163849007C1A7D /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 231A2109292E55D100D8E9C2 /* key.c */; };
-		DF487EAD2A163849007C1A7D /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DC292E558300D8E9C2 /* String+ArrayConversion.swift */; };
-		DF487EAE2A163849007C1A7D /* Array+ConcurrentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F2292E55A900D8E9C2 /* Array+ConcurrentMap.swift */; };
-		DF487EAF2A163849007C1A7D /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20D7292E558300D8E9C2 /* Keychain.swift */; };
-		DF487EB02A163849007C1A7D /* WireGuardAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F1292E55A900D8E9C2 /* WireGuardAdapter.swift */; };
-		DF487EB12A163849007C1A7D /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DB292E558300D8E9C2 /* NETunnelProviderProtocol+Extension.swift */; };
-		DF487EB22A163849007C1A7D /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20EF292E55A900D8E9C2 /* DNSServer.swift */; };
-		DF487EB52A163849007C1A7D /* PeerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20EE292E55A900D8E9C2 /* PeerConfiguration.swift */; };
-		DF487EB62A163849007C1A7D /* PacketTunnelSettingsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F6292E55A900D8E9C2 /* PacketTunnelSettingsGenerator.swift */; };
-		DF487EB72A163849007C1A7D /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20ED292E55A900D8E9C2 /* InterfaceConfiguration.swift */; };
-		DF487EB92A163849007C1A7D /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F3292E55A900D8E9C2 /* DNSResolver.swift */; };
-		DF487EBA2A163849007C1A7D /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20D6292E558300D8E9C2 /* FileManager+Extension.swift */; };
-		DF487EBB2A163849007C1A7D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F8292E55A900D8E9C2 /* Endpoint.swift */; };
-		DF487EBC2A163849007C1A7D /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F7292E55A900D8E9C2 /* IPAddressRange.swift */; };
-		DF487EBD2A163849007C1A7D /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F5292E55A900D8E9C2 /* PrivateKey.swift */; };
-		DF487ECC2A16410F007C1A7D /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20D8292E558300D8E9C2 /* NotificationToken.swift */; };
+		DF0277CF2AC4326600539545 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0277CE2AC4326500539545 /* libwg-go.a */; };
+		DF3A37942AC59FE800B9729B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37882AC59F7900B9729B /* Endpoint.swift */; };
+		DF3A37952AC59FE800B9729B /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378E2AC59F7A00B9729B /* IPAddressRange.swift */; };
+		DF3A37962AC59FE800B9729B /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37912AC59F7A00B9729B /* TunnelConfiguration.swift */; };
+		DF3A37972AC59FE800B9729B /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37932AC59F7A00B9729B /* DNSResolver.swift */; };
+		DF3A37982AC59FE800B9729B /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378C2AC59F7900B9729B /* DNSServer.swift */; };
+		DF3A37992AC59FE800B9729B /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37892AC59F7900B9729B /* InterfaceConfiguration.swift */; };
+		DF3A379A2AC59FE800B9729B /* PacketTunnelSettingsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378D2AC59F7A00B9729B /* PacketTunnelSettingsGenerator.swift */; };
+		DF3A379B2AC59FE800B9729B /* PeerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378F2AC59F7A00B9729B /* PeerConfiguration.swift */; };
+		DF3A379C2AC59FE800B9729B /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37922AC59F7A00B9729B /* PrivateKey.swift */; };
+		DF3A379D2AC59FE800B9729B /* WireGuardAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37902AC59F7A00B9729B /* WireGuardAdapter.swift */; };
+		DF3A379E2AC59FE800B9729B /* IPAddress+AddrInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378B2AC59F7900B9729B /* IPAddress+AddrInfo.swift */; };
+		DF3A379F2AC59FE800B9729B /* Array+ConcurrentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378A2AC59F7900B9729B /* Array+ConcurrentMap.swift */; };
+		DF3A37A02AC59FEA00B9729B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37882AC59F7900B9729B /* Endpoint.swift */; };
+		DF3A37A12AC59FEA00B9729B /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378E2AC59F7A00B9729B /* IPAddressRange.swift */; };
+		DF3A37A22AC59FEA00B9729B /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37912AC59F7A00B9729B /* TunnelConfiguration.swift */; };
+		DF3A37A32AC59FEA00B9729B /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37932AC59F7A00B9729B /* DNSResolver.swift */; };
+		DF3A37A42AC59FEA00B9729B /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378C2AC59F7900B9729B /* DNSServer.swift */; };
+		DF3A37A52AC59FEA00B9729B /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37892AC59F7900B9729B /* InterfaceConfiguration.swift */; };
+		DF3A37A62AC59FEA00B9729B /* PacketTunnelSettingsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378D2AC59F7A00B9729B /* PacketTunnelSettingsGenerator.swift */; };
+		DF3A37A72AC59FEA00B9729B /* PeerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378F2AC59F7A00B9729B /* PeerConfiguration.swift */; };
+		DF3A37A82AC59FEA00B9729B /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37922AC59F7A00B9729B /* PrivateKey.swift */; };
+		DF3A37A92AC59FEA00B9729B /* WireGuardAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37902AC59F7A00B9729B /* WireGuardAdapter.swift */; };
+		DF3A37AA2AC59FEA00B9729B /* IPAddress+AddrInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378B2AC59F7900B9729B /* IPAddress+AddrInfo.swift */; };
+		DF3A37AB2AC59FEA00B9729B /* Array+ConcurrentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378A2AC59F7900B9729B /* Array+ConcurrentMap.swift */; };
+		DF3A37AC2AC59FEE00B9729B /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37842AC59F5600B9729B /* ErrorNotifier.swift */; };
+		DF3A37AD2AC59FEE00B9729B /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37852AC59F5600B9729B /* PacketTunnelProvider.swift */; };
+		DF3A37AE2AC59FEF00B9729B /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37842AC59F5600B9729B /* ErrorNotifier.swift */; };
+		DF3A37AF2AC59FEF00B9729B /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37852AC59F5600B9729B /* PacketTunnelProvider.swift */; };
+		DF3A37B02AC59FF200B9729B /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377B2AC59EAB00B9729B /* NotificationToken.swift */; };
+		DF3A37B22AC59FF200B9729B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37782AC59EAB00B9729B /* Keychain.swift */; };
+		DF3A37B32AC59FF300B9729B /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377B2AC59EAB00B9729B /* NotificationToken.swift */; };
+		DF3A37B52AC59FF300B9729B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37782AC59EAB00B9729B /* Keychain.swift */; };
+		DF3A37B62AC59FF600B9729B /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377F2AC59EAB00B9729B /* String+ArrayConversion.swift */; };
+		DF3A37B72AC59FF600B9729B /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377D2AC59EAB00B9729B /* NETunnelProviderProtocol+Extension.swift */; };
+		DF3A37B82AC59FF600B9729B /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377E2AC59EAB00B9729B /* TunnelConfiguration+WgQuickConfig.swift */; };
+		DF3A37B92AC59FF700B9729B /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377F2AC59EAB00B9729B /* String+ArrayConversion.swift */; };
+		DF3A37BA2AC59FF700B9729B /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377D2AC59EAB00B9729B /* NETunnelProviderProtocol+Extension.swift */; };
+		DF3A37BB2AC59FF700B9729B /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377E2AC59EAB00B9729B /* TunnelConfiguration+WgQuickConfig.swift */; };
+		DF3A37BC2AC5A00300B9729B /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37772AC59EAB00B9729B /* FileManager+Extension.swift */; };
+		DF3A37BD2AC5A00300B9729B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37812AC59EAB00B9729B /* Logger.swift */; };
+		DF3A37BF2AC5A00400B9729B /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37772AC59EAB00B9729B /* FileManager+Extension.swift */; };
+		DF3A37C02AC5A00400B9729B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37812AC59EAB00B9729B /* Logger.swift */; };
 		DF487ED22A16472D007C1A7D /* SHWireGuardKitmacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487EC62A163D14007C1A7D /* SHWireGuardKitmacOS.h */; };
-		DF487EDB2A164AF5007C1A7D /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A20E1292E558300D8E9C2 /* ringlogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EDC2A164AF5007C1A7D /* x25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A210B292E55D100D8E9C2 /* x25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EDE2A164AF5007C1A7D /* key.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A2107292E55D100D8E9C2 /* key.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EE02A164AF5007C1A7D /* WireGuardKitC.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A2106292E55D100D8E9C2 /* WireGuardKitC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EE12A164AF5007C1A7D /* wireguard.h in Headers */ = {isa = PBXBuildFile; fileRef = 231A2111292E55E000D8E9C2 /* wireguard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF487EE32A164AF5007C1A7D /* PeerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20EE292E55A900D8E9C2 /* PeerConfiguration.swift */; };
-		DF487EE42A164AF5007C1A7D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DF292E558300D8E9C2 /* Logger.swift */; };
-		DF487EE52A164AF5007C1A7D /* IPAddress+AddrInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F4292E55A900D8E9C2 /* IPAddress+AddrInfo.swift */; };
-		DF487EE62A164AF5007C1A7D /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DE292E558300D8E9C2 /* ringlogger.c */; };
-		DF487EE72A164AF5007C1A7D /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 231A2108292E55D100D8E9C2 /* x25519.c */; };
-		DF487EE82A164AF5007C1A7D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F8292E55A900D8E9C2 /* Endpoint.swift */; };
-		DF487EE92A164AF5007C1A7D /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DA292E558300D8E9C2 /* TunnelConfiguration+WgQuickConfig.swift */; };
-		DF487EEA2A164AF5007C1A7D /* PacketTunnelSettingsGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F6292E55A900D8E9C2 /* PacketTunnelSettingsGenerator.swift */; };
-		DF487EEB2A164AF5007C1A7D /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20D7292E558300D8E9C2 /* Keychain.swift */; };
-		DF487EEC2A164AF5007C1A7D /* WireGuardAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F1292E55A900D8E9C2 /* WireGuardAdapter.swift */; };
-		DF487EED2A164AF5007C1A7D /* TunnelConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F0292E55A900D8E9C2 /* TunnelConfiguration.swift */; };
-		DF487EEE2A164AF5007C1A7D /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DB292E558300D8E9C2 /* NETunnelProviderProtocol+Extension.swift */; };
-		DF487EEF2A164AF5007C1A7D /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20DC292E558300D8E9C2 /* String+ArrayConversion.swift */; };
-		DF487EF22A164AF5007C1A7D /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 231A2109292E55D100D8E9C2 /* key.c */; };
-		DF487EF32A164AF5007C1A7D /* Array+ConcurrentMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F2292E55A900D8E9C2 /* Array+ConcurrentMap.swift */; };
-		DF487EF42A164AF5007C1A7D /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F7292E55A900D8E9C2 /* IPAddressRange.swift */; };
-		DF487EF52A164AF5007C1A7D /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20D8292E558300D8E9C2 /* NotificationToken.swift */; };
-		DF487EF62A164AF5007C1A7D /* DNSServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20EF292E55A900D8E9C2 /* DNSServer.swift */; };
-		DF487EF72A164AF5007C1A7D /* FileManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20D6292E558300D8E9C2 /* FileManager+Extension.swift */; };
-		DF487EF82A164AF5007C1A7D /* DNSResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F3292E55A900D8E9C2 /* DNSResolver.swift */; };
-		DF487EF92A164AF5007C1A7D /* InterfaceConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20ED292E55A900D8E9C2 /* InterfaceConfiguration.swift */; };
-		DF487EFA2A164AF5007C1A7D /* PrivateKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A20F5292E55A900D8E9C2 /* PrivateKey.swift */; };
 		DF487F042A164B41007C1A7D /* SHWireGuardKitiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487F032A164B41007C1A7D /* SHWireGuardKitiOS.h */; };
-		DF62BE7F2A16953E0045030C /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62BE7B2A16952B0045030C /* ErrorNotifier.swift */; };
-		DF62BE802A1695410045030C /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62BE7C2A16952B0045030C /* PacketTunnelProvider.swift */; };
+		DF5B4C122AC562E200A20466 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C0D2AC562E200A20466 /* key.c */; };
+		DF5B4C132AC562E200A20466 /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C0E2AC562E200A20466 /* x25519.c */; };
+		DF5B4C142AC562E200A20466 /* x25519.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C0F2AC562E200A20466 /* x25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C152AC562E200A20466 /* WireGuardKitC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C102AC562E200A20466 /* WireGuardKitC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C162AC562E200A20466 /* key.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C112AC562E200A20466 /* key.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C172AC562E900A20466 /* x25519.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C0F2AC562E200A20466 /* x25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C182AC562E900A20466 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C0D2AC562E200A20466 /* key.c */; };
+		DF5B4C192AC562E900A20466 /* key.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C112AC562E200A20466 /* key.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C1A2AC562E900A20466 /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C0E2AC562E200A20466 /* x25519.c */; };
+		DF5B4C1B2AC562E900A20466 /* WireGuardKitC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C102AC562E200A20466 /* WireGuardKitC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C1D2AC5630000A20466 /* wireguard.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C1C2AC5630000A20466 /* wireguard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C202AC5631800A20466 /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C1E2AC5631700A20466 /* ringlogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C212AC5631800A20466 /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C1F2AC5631700A20466 /* ringlogger.c */; };
+		DF5B4C222AC5632000A20466 /* wireguard.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C1C2AC5630000A20466 /* wireguard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C232AC5632000A20466 /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C1E2AC5631700A20466 /* ringlogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF5B4C242AC5632000A20466 /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C1F2AC5631700A20466 /* ringlogger.c */; };
 		DF7C47712A20C43500949CB5 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7C476E2A20BF3000949CB5 /* libwg-go.a */; };
-		DF7C47732A20C44C00949CB5 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7C47722A20C44C00949CB5 /* libwg-go.a */; };
 		DFCEC34D2A1CB91100DD2E1D /* SHWireGuardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFCEC34E2A1CB91300DD2E1D /* SHWireGuardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFCEC34F2A1CC59F00DD2E1D /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62BE7C2A16952B0045030C /* PacketTunnelProvider.swift */; };
-		DFCEC3502A1CC5A300DD2E1D /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62BE7B2A16952B0045030C /* ErrorNotifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DF487E9C2A163849007C1A7D /* PBXContainerItemProxy */ = {
+		DF0277CC2AC4320A00539545 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2302A67D27C6B153009F8664 /* Project object */;
 			proxyType = 1;
@@ -112,53 +92,43 @@
 
 /* Begin PBXFileReference section */
 		23187DED292E8F7A00ED302A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		231A20D6292E558300D8E9C2 /* FileManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
-		231A20D7292E558300D8E9C2 /* Keychain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
-		231A20D8292E558300D8E9C2 /* NotificationToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
-		231A20DA292E558300D8E9C2 /* TunnelConfiguration+WgQuickConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+WgQuickConfig.swift"; sourceTree = "<group>"; };
-		231A20DB292E558300D8E9C2 /* NETunnelProviderProtocol+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NETunnelProviderProtocol+Extension.swift"; sourceTree = "<group>"; };
-		231A20DC292E558300D8E9C2 /* String+ArrayConversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+ArrayConversion.swift"; sourceTree = "<group>"; };
-		231A20DE292E558300D8E9C2 /* ringlogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ringlogger.c; sourceTree = "<group>"; };
-		231A20DF292E558300D8E9C2 /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		231A20E1292E558300D8E9C2 /* ringlogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ringlogger.h; sourceTree = "<group>"; };
-		231A20ED292E55A900D8E9C2 /* InterfaceConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceConfiguration.swift; sourceTree = "<group>"; };
-		231A20EE292E55A900D8E9C2 /* PeerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeerConfiguration.swift; sourceTree = "<group>"; };
-		231A20EF292E55A900D8E9C2 /* DNSServer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSServer.swift; sourceTree = "<group>"; };
-		231A20F0292E55A900D8E9C2 /* TunnelConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TunnelConfiguration.swift; sourceTree = "<group>"; };
-		231A20F1292E55A900D8E9C2 /* WireGuardAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WireGuardAdapter.swift; sourceTree = "<group>"; };
-		231A20F2292E55A900D8E9C2 /* Array+ConcurrentMap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+ConcurrentMap.swift"; sourceTree = "<group>"; };
-		231A20F3292E55A900D8E9C2 /* DNSResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DNSResolver.swift; sourceTree = "<group>"; };
-		231A20F4292E55A900D8E9C2 /* IPAddress+AddrInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IPAddress+AddrInfo.swift"; sourceTree = "<group>"; };
-		231A20F5292E55A900D8E9C2 /* PrivateKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
-		231A20F6292E55A900D8E9C2 /* PacketTunnelSettingsGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketTunnelSettingsGenerator.swift; sourceTree = "<group>"; };
-		231A20F7292E55A900D8E9C2 /* IPAddressRange.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPAddressRange.swift; sourceTree = "<group>"; };
-		231A20F8292E55A900D8E9C2 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
-		231A2106292E55D100D8E9C2 /* WireGuardKitC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireGuardKitC.h; sourceTree = "<group>"; };
-		231A2107292E55D100D8E9C2 /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
-		231A2108292E55D100D8E9C2 /* x25519.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x25519.c; sourceTree = "<group>"; };
-		231A2109292E55D100D8E9C2 /* key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
-		231A210B292E55D100D8E9C2 /* x25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x25519.h; sourceTree = "<group>"; };
-		231A2111292E55E000D8E9C2 /* wireguard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wireguard.h; path = wireguard/Sources/WireGuardKitGo/wireguard.h; sourceTree = "<group>"; };
 		23916CCE28378B1F0046A972 /* build_framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_framework.sh; sourceTree = "<group>"; };
-		DF09901E2A94E69D00065BC9 /* WireGuardAppError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WireGuardAppError.swift; path = wireguard/Sources/WireGuardApp/WireGuardAppError.swift; sourceTree = "<group>"; };
-		DF09901F2A94E69D00065BC9 /* WireGuardResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WireGuardResult.swift; path = wireguard/Sources/WireGuardApp/WireGuardResult.swift; sourceTree = "<group>"; };
-		DF0990302A94E72000065BC9 /* LocalizationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LocalizationHelper.swift; path = wireguard/Sources/WireGuardApp/LocalizationHelper.swift; sourceTree = "<group>"; };
-		DF09903C2A94E9CB00065BC9 /* ActivateOnDemandOption.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivateOnDemandOption.swift; path = wireguard/Sources/WireGuardApp/Tunnel/ActivateOnDemandOption.swift; sourceTree = "<group>"; };
-		DF09903E2A94E9CB00065BC9 /* MockTunnels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockTunnels.swift; path = wireguard/Sources/WireGuardApp/Tunnel/MockTunnels.swift; sourceTree = "<group>"; };
-		DF09903F2A94E9CB00065BC9 /* TunnelErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TunnelErrors.swift; path = wireguard/Sources/WireGuardApp/Tunnel/TunnelErrors.swift; sourceTree = "<group>"; };
-		DF0990402A94E9CB00065BC9 /* TunnelsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TunnelsManager.swift; path = wireguard/Sources/WireGuardApp/Tunnel/TunnelsManager.swift; sourceTree = "<group>"; };
-		DF0990412A94E9CB00065BC9 /* TunnelStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TunnelStatus.swift; path = wireguard/Sources/WireGuardApp/Tunnel/TunnelStatus.swift; sourceTree = "<group>"; };
-		DF09904E2A94EB7800065BC9 /* TunnelConfiguration+UapiConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TunnelConfiguration+UapiConfig.swift"; path = "wireguard/Sources/WireGuardApp/Tunnel/TunnelConfiguration+UapiConfig.swift"; sourceTree = "<group>"; };
-		DF0990512A94F4E800065BC9 /* RecentTunnelsTracker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecentTunnelsTracker.swift; path = wireguard/Sources/WireGuardApp/UI/iOS/RecentTunnelsTracker.swift; sourceTree = "<group>"; };
+		DF0277CE2AC4326500539545 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../Library/Developer/Xcode/DerivedData/SHWireGuardKit-bjrqdoedgdtnygceezyaalbhmdon/Build/Products/Debug-iphoneos/libwg-go.a"; sourceTree = "<group>"; };
+		DF3A37772AC59EAB00B9729B /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
+		DF3A37782AC59EAB00B9729B /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		DF3A377B2AC59EAB00B9729B /* NotificationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
+		DF3A377D2AC59EAB00B9729B /* NETunnelProviderProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NETunnelProviderProtocol+Extension.swift"; sourceTree = "<group>"; };
+		DF3A377E2AC59EAB00B9729B /* TunnelConfiguration+WgQuickConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+WgQuickConfig.swift"; sourceTree = "<group>"; };
+		DF3A377F2AC59EAB00B9729B /* String+ArrayConversion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ArrayConversion.swift"; sourceTree = "<group>"; };
+		DF3A37812AC59EAB00B9729B /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		DF3A37842AC59F5600B9729B /* ErrorNotifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorNotifier.swift; sourceTree = "<group>"; };
+		DF3A37852AC59F5600B9729B /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		DF3A37882AC59F7900B9729B /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		DF3A37892AC59F7900B9729B /* InterfaceConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceConfiguration.swift; sourceTree = "<group>"; };
+		DF3A378A2AC59F7900B9729B /* Array+ConcurrentMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Array+ConcurrentMap.swift"; sourceTree = "<group>"; };
+		DF3A378B2AC59F7900B9729B /* IPAddress+AddrInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "IPAddress+AddrInfo.swift"; sourceTree = "<group>"; };
+		DF3A378C2AC59F7900B9729B /* DNSServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSServer.swift; sourceTree = "<group>"; };
+		DF3A378D2AC59F7A00B9729B /* PacketTunnelSettingsGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelSettingsGenerator.swift; sourceTree = "<group>"; };
+		DF3A378E2AC59F7A00B9729B /* IPAddressRange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IPAddressRange.swift; sourceTree = "<group>"; };
+		DF3A378F2AC59F7A00B9729B /* PeerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeerConfiguration.swift; sourceTree = "<group>"; };
+		DF3A37902AC59F7A00B9729B /* WireGuardAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardAdapter.swift; sourceTree = "<group>"; };
+		DF3A37912AC59F7A00B9729B /* TunnelConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelConfiguration.swift; sourceTree = "<group>"; };
+		DF3A37922AC59F7A00B9729B /* PrivateKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivateKey.swift; sourceTree = "<group>"; };
+		DF3A37932AC59F7A00B9729B /* DNSResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSResolver.swift; sourceTree = "<group>"; };
 		DF487EC42A163849007C1A7D /* SHWireGuardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHWireGuardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF487EC62A163D14007C1A7D /* SHWireGuardKitmacOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWireGuardKitmacOS.h; sourceTree = "<group>"; };
 		DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWireGuardKit.h; sourceTree = "<group>"; };
 		DF487F012A164AF5007C1A7D /* SHWireGuardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHWireGuardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF487F032A164B41007C1A7D /* SHWireGuardKitiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWireGuardKitiOS.h; sourceTree = "<group>"; };
-		DF62BE7B2A16952B0045030C /* ErrorNotifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorNotifier.swift; sourceTree = "<group>"; };
-		DF62BE7C2A16952B0045030C /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		DF5B4C0D2AC562E200A20466 /* key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
+		DF5B4C0E2AC562E200A20466 /* x25519.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x25519.c; sourceTree = "<group>"; };
+		DF5B4C0F2AC562E200A20466 /* x25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x25519.h; sourceTree = "<group>"; };
+		DF5B4C102AC562E200A20466 /* WireGuardKitC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireGuardKitC.h; sourceTree = "<group>"; };
+		DF5B4C112AC562E200A20466 /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		DF5B4C1C2AC5630000A20466 /* wireguard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wireguard.h; path = wireguard/Sources/WireGuardKitGo/wireguard.h; sourceTree = SOURCE_ROOT; };
+		DF5B4C1E2AC5631700A20466 /* ringlogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ringlogger.h; path = wireguard/Sources/Shared/Logging/ringlogger.h; sourceTree = SOURCE_ROOT; };
+		DF5B4C1F2AC5631700A20466 /* ringlogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ringlogger.c; path = wireguard/Sources/Shared/Logging/ringlogger.c; sourceTree = SOURCE_ROOT; };
 		DF7C476E2A20BF3000949CB5 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../Library/Developer/Xcode/DerivedData/SHWireGuardKit-bjrqdoedgdtnygceezyaalbhmdon/Build/Products/Debug/libwg-go.a"; sourceTree = "<group>"; };
-		DF7C47722A20C44C00949CB5 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../Library/Developer/Xcode/DerivedData/SHWireGuardKit-bjrqdoedgdtnygceezyaalbhmdon/Build/Products/Debug-iphoneos/libwg-go.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,7 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF7C47732A20C44C00949CB5 /* libwg-go.a in Frameworks */,
+				DF0277CF2AC4326600539545 /* libwg-go.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,9 +154,9 @@
 		2302A67C27C6B153009F8664 = {
 			isa = PBXGroup;
 			children = (
-				23187DED292E8F7A00ED302A /* Package.swift */,
+				DF5B4C0C2AC5629800A20466 /* WireGuardKitC */,
 				23916CCE28378B1F0046A972 /* build_framework.sh */,
-				23C3560A27DF63100063D69B /* WireGuard */,
+				23187DED292E8F7A00ED302A /* Package.swift */,
 				DF487ECE2A16428F007C1A7D /* SHWireGuardKit */,
 				DF487F022A164B0A007C1A7D /* SHWireGuardKitiOS */,
 				DF487EC52A163CD7007C1A7D /* SHWireGuardKitmacOS */,
@@ -204,117 +174,71 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		231A20D5292E558300D8E9C2 /* Shared */ = {
-			isa = PBXGroup;
-			children = (
-				231A20D6292E558300D8E9C2 /* FileManager+Extension.swift */,
-				231A20D7292E558300D8E9C2 /* Keychain.swift */,
-				231A20D8292E558300D8E9C2 /* NotificationToken.swift */,
-				231A20D9292E558300D8E9C2 /* Model */,
-				231A20DD292E558300D8E9C2 /* Logging */,
-			);
-			name = Shared;
-			path = wireguard/Sources/Shared;
-			sourceTree = "<group>";
-		};
-		231A20D9292E558300D8E9C2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				231A20DA292E558300D8E9C2 /* TunnelConfiguration+WgQuickConfig.swift */,
-				231A20DB292E558300D8E9C2 /* NETunnelProviderProtocol+Extension.swift */,
-				231A20DC292E558300D8E9C2 /* String+ArrayConversion.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		231A20DD292E558300D8E9C2 /* Logging */ = {
-			isa = PBXGroup;
-			children = (
-				231A20DE292E558300D8E9C2 /* ringlogger.c */,
-				231A20DF292E558300D8E9C2 /* Logger.swift */,
-				231A20E1292E558300D8E9C2 /* ringlogger.h */,
-			);
-			path = Logging;
-			sourceTree = "<group>";
-		};
-		231A20EC292E55A900D8E9C2 /* WireGuardKit */ = {
-			isa = PBXGroup;
-			children = (
-				231A20ED292E55A900D8E9C2 /* InterfaceConfiguration.swift */,
-				231A20EE292E55A900D8E9C2 /* PeerConfiguration.swift */,
-				231A20EF292E55A900D8E9C2 /* DNSServer.swift */,
-				231A20F0292E55A900D8E9C2 /* TunnelConfiguration.swift */,
-				231A20F1292E55A900D8E9C2 /* WireGuardAdapter.swift */,
-				231A20F2292E55A900D8E9C2 /* Array+ConcurrentMap.swift */,
-				231A20F3292E55A900D8E9C2 /* DNSResolver.swift */,
-				231A20F4292E55A900D8E9C2 /* IPAddress+AddrInfo.swift */,
-				231A20F5292E55A900D8E9C2 /* PrivateKey.swift */,
-				231A20F6292E55A900D8E9C2 /* PacketTunnelSettingsGenerator.swift */,
-				231A20F7292E55A900D8E9C2 /* IPAddressRange.swift */,
-				231A20F8292E55A900D8E9C2 /* Endpoint.swift */,
-			);
-			name = WireGuardKit;
-			path = wireguard/Sources/WireGuardKit;
-			sourceTree = "<group>";
-		};
-		231A2105292E55D100D8E9C2 /* WireGuardKitC */ = {
-			isa = PBXGroup;
-			children = (
-				231A2106292E55D100D8E9C2 /* WireGuardKitC.h */,
-				231A2107292E55D100D8E9C2 /* key.h */,
-				231A2108292E55D100D8E9C2 /* x25519.c */,
-				231A2109292E55D100D8E9C2 /* key.c */,
-				231A210B292E55D100D8E9C2 /* x25519.h */,
-			);
-			name = WireGuardKitC;
-			path = wireguard/Sources/WireGuardKitC;
-			sourceTree = "<group>";
-		};
 		23C354D327DF55490063D69B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF7C47722A20C44C00949CB5 /* libwg-go.a */,
+				DF0277CE2AC4326500539545 /* libwg-go.a */,
 				DF7C476E2A20BF3000949CB5 /* libwg-go.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		23C3560A27DF63100063D69B /* WireGuard */ = {
+		DF3A37762AC59EAB00B9729B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				231A2111292E55E000D8E9C2 /* wireguard.h */,
-				DF098FE82A94DBDF00065BC9 /* WireGuardApp */,
-				231A2105292E55D100D8E9C2 /* WireGuardKitC */,
-				231A20EC292E55A900D8E9C2 /* WireGuardKit */,
-				DF62BE7A2A1694C00045030C /* WireGuardNetworkExtension */,
-				231A20D5292E558300D8E9C2 /* Shared */,
+				DF3A37782AC59EAB00B9729B /* Keychain.swift */,
+				DF3A377B2AC59EAB00B9729B /* NotificationToken.swift */,
+				DF3A377C2AC59EAB00B9729B /* Model */,
+				DF3A37802AC59EAB00B9729B /* Logging */,
+				DF3A37772AC59EAB00B9729B /* FileManager+Extension.swift */,
 			);
-			name = WireGuard;
+			path = Shared;
 			sourceTree = "<group>";
 		};
-		DF098FE82A94DBDF00065BC9 /* WireGuardApp */ = {
+		DF3A377C2AC59EAB00B9729B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				DF09901F2A94E69D00065BC9 /* WireGuardResult.swift */,
-				DF09901E2A94E69D00065BC9 /* WireGuardAppError.swift */,
-				DF0990302A94E72000065BC9 /* LocalizationHelper.swift */,
-				DF0990172A94E62E00065BC9 /* Tunnel */,
+				DF3A377F2AC59EAB00B9729B /* String+ArrayConversion.swift */,
+				DF3A377D2AC59EAB00B9729B /* NETunnelProviderProtocol+Extension.swift */,
+				DF3A377E2AC59EAB00B9729B /* TunnelConfiguration+WgQuickConfig.swift */,
 			);
-			name = WireGuardApp;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		DF0990172A94E62E00065BC9 /* Tunnel */ = {
+		DF3A37802AC59EAB00B9729B /* Logging */ = {
 			isa = PBXGroup;
 			children = (
-				DF0990512A94F4E800065BC9 /* RecentTunnelsTracker.swift */,
-				DF09904E2A94EB7800065BC9 /* TunnelConfiguration+UapiConfig.swift */,
-				DF09903C2A94E9CB00065BC9 /* ActivateOnDemandOption.swift */,
-				DF09903E2A94E9CB00065BC9 /* MockTunnels.swift */,
-				DF09903F2A94E9CB00065BC9 /* TunnelErrors.swift */,
-				DF0990402A94E9CB00065BC9 /* TunnelsManager.swift */,
-				DF0990412A94E9CB00065BC9 /* TunnelStatus.swift */,
+				DF3A37812AC59EAB00B9729B /* Logger.swift */,
 			);
-			name = Tunnel;
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		DF3A37832AC59F5600B9729B /* PacketProvider */ = {
+			isa = PBXGroup;
+			children = (
+				DF3A37842AC59F5600B9729B /* ErrorNotifier.swift */,
+				DF3A37852AC59F5600B9729B /* PacketTunnelProvider.swift */,
+			);
+			path = PacketProvider;
+			sourceTree = "<group>";
+		};
+		DF3A37872AC59F7900B9729B /* WireGuardKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF3A378A2AC59F7900B9729B /* Array+ConcurrentMap.swift */,
+				DF3A37932AC59F7A00B9729B /* DNSResolver.swift */,
+				DF3A378C2AC59F7900B9729B /* DNSServer.swift */,
+				DF3A37882AC59F7900B9729B /* Endpoint.swift */,
+				DF3A37892AC59F7900B9729B /* InterfaceConfiguration.swift */,
+				DF3A378B2AC59F7900B9729B /* IPAddress+AddrInfo.swift */,
+				DF3A378E2AC59F7A00B9729B /* IPAddressRange.swift */,
+				DF3A378D2AC59F7A00B9729B /* PacketTunnelSettingsGenerator.swift */,
+				DF3A378F2AC59F7A00B9729B /* PeerConfiguration.swift */,
+				DF3A37922AC59F7A00B9729B /* PrivateKey.swift */,
+				DF3A37912AC59F7A00B9729B /* TunnelConfiguration.swift */,
+				DF3A37902AC59F7A00B9729B /* WireGuardAdapter.swift */,
+			);
+			path = WireGuardKit;
 			sourceTree = "<group>";
 		};
 		DF487EC52A163CD7007C1A7D /* SHWireGuardKitmacOS */ = {
@@ -328,6 +252,9 @@
 		DF487ECE2A16428F007C1A7D /* SHWireGuardKit */ = {
 			isa = PBXGroup;
 			children = (
+				DF3A37872AC59F7900B9729B /* WireGuardKit */,
+				DF3A37832AC59F5600B9729B /* PacketProvider */,
+				DF3A37762AC59EAB00B9729B /* Shared */,
 				DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */,
 			);
 			path = SHWireGuardKit;
@@ -341,14 +268,20 @@
 			path = SHWireGuardKitiOS;
 			sourceTree = "<group>";
 		};
-		DF62BE7A2A1694C00045030C /* WireGuardNetworkExtension */ = {
+		DF5B4C0C2AC5629800A20466 /* WireGuardKitC */ = {
 			isa = PBXGroup;
 			children = (
-				DF62BE7B2A16952B0045030C /* ErrorNotifier.swift */,
-				DF62BE7C2A16952B0045030C /* PacketTunnelProvider.swift */,
+				DF5B4C1F2AC5631700A20466 /* ringlogger.c */,
+				DF5B4C1E2AC5631700A20466 /* ringlogger.h */,
+				DF5B4C1C2AC5630000A20466 /* wireguard.h */,
+				DF5B4C0D2AC562E200A20466 /* key.c */,
+				DF5B4C112AC562E200A20466 /* key.h */,
+				DF5B4C102AC562E200A20466 /* WireGuardKitC.h */,
+				DF5B4C0E2AC562E200A20466 /* x25519.c */,
+				DF5B4C0F2AC562E200A20466 /* x25519.h */,
 			);
-			name = WireGuardNetworkExtension;
-			path = wireguard/Sources/WireGuardNetworkExtension;
+			name = WireGuardKitC;
+			path = wireguard/Sources/WireGuardKitC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,12 +291,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF487E9E2A163849007C1A7D /* ringlogger.h in Headers */,
-				DF487E9F2A163849007C1A7D /* x25519.h in Headers */,
+				DF5B4C162AC562E200A20466 /* key.h in Headers */,
+				DF5B4C142AC562E200A20466 /* x25519.h in Headers */,
+				DF5B4C202AC5631800A20466 /* ringlogger.h in Headers */,
+				DF5B4C1D2AC5630000A20466 /* wireguard.h in Headers */,
 				DFCEC34E2A1CB91300DD2E1D /* SHWireGuardKit.h in Headers */,
-				DF487EA12A163849007C1A7D /* key.h in Headers */,
-				DF487EA32A163849007C1A7D /* WireGuardKitC.h in Headers */,
-				DF487EA42A163849007C1A7D /* wireguard.h in Headers */,
+				DF5B4C152AC562E200A20466 /* WireGuardKitC.h in Headers */,
 				DF487ED22A16472D007C1A7D /* SHWireGuardKitmacOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,12 +305,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF487EDB2A164AF5007C1A7D /* ringlogger.h in Headers */,
-				DF487EDC2A164AF5007C1A7D /* x25519.h in Headers */,
+				DF5B4C192AC562E900A20466 /* key.h in Headers */,
 				DFCEC34D2A1CB91100DD2E1D /* SHWireGuardKit.h in Headers */,
-				DF487EDE2A164AF5007C1A7D /* key.h in Headers */,
-				DF487EE02A164AF5007C1A7D /* WireGuardKitC.h in Headers */,
-				DF487EE12A164AF5007C1A7D /* wireguard.h in Headers */,
+				DF5B4C172AC562E900A20466 /* x25519.h in Headers */,
+				DF5B4C222AC5632000A20466 /* wireguard.h in Headers */,
+				DF5B4C1B2AC562E900A20466 /* WireGuardKitC.h in Headers */,
+				DF5B4C232AC5632000A20466 /* ringlogger.h in Headers */,
 				DF487F042A164B41007C1A7D /* SHWireGuardKitiOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -428,7 +361,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				DF487E9B2A163849007C1A7D /* PBXTargetDependency */,
+				DF0277CD2AC4320A00539545 /* PBXTargetDependency */,
 			);
 			name = SHWireGuardKitmacOS;
 			productName = GRDWireGuardKitmacOS;
@@ -468,6 +401,12 @@
 					};
 					2302A81D27C6B364009F8664 = {
 						CreatedOnToolsVersion = 13.2;
+					};
+					DF487E9A2A163849007C1A7D = {
+						LastSwiftMigration = 1500;
+					};
+					DF487ED72A164AF5007C1A7D = {
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -514,40 +453,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DFCEC3502A1CC5A300DD2E1D /* ErrorNotifier.swift in Sources */,
-				DF0990462A94E9CB00065BC9 /* MockTunnels.swift in Sources */,
-				DF487EB02A163849007C1A7D /* WireGuardAdapter.swift in Sources */,
-				DF487EA92A163849007C1A7D /* ringlogger.c in Sources */,
-				DF487EAF2A163849007C1A7D /* Keychain.swift in Sources */,
-				DF487EB92A163849007C1A7D /* DNSResolver.swift in Sources */,
-				DF09904C2A94E9CB00065BC9 /* TunnelStatus.swift in Sources */,
-				DF487EBC2A163849007C1A7D /* IPAddressRange.swift in Sources */,
-				DF487EA72A163849007C1A7D /* Logger.swift in Sources */,
-				DF0990422A94E9CB00065BC9 /* ActivateOnDemandOption.swift in Sources */,
-				DF487EA62A163849007C1A7D /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
-				DF487EB62A163849007C1A7D /* PacketTunnelSettingsGenerator.swift in Sources */,
-				DF487EB52A163849007C1A7D /* PeerConfiguration.swift in Sources */,
-				DF0990312A94E72000065BC9 /* LocalizationHelper.swift in Sources */,
-				DF487EBD2A163849007C1A7D /* PrivateKey.swift in Sources */,
-				DF0990202A94E69D00065BC9 /* WireGuardAppError.swift in Sources */,
-				DFCEC34F2A1CC59F00DD2E1D /* PacketTunnelProvider.swift in Sources */,
-				DF0990522A94F4E800065BC9 /* RecentTunnelsTracker.swift in Sources */,
-				DF0990222A94E69D00065BC9 /* WireGuardResult.swift in Sources */,
-				DF487EAA2A163849007C1A7D /* TunnelConfiguration.swift in Sources */,
-				DF09904A2A94E9CB00065BC9 /* TunnelsManager.swift in Sources */,
-				DF09904F2A94EB7800065BC9 /* TunnelConfiguration+UapiConfig.swift in Sources */,
-				DF487EA82A163849007C1A7D /* x25519.c in Sources */,
-				DF0990482A94E9CB00065BC9 /* TunnelErrors.swift in Sources */,
-				DF487EB12A163849007C1A7D /* NETunnelProviderProtocol+Extension.swift in Sources */,
-				DF487EAC2A163849007C1A7D /* key.c in Sources */,
-				DF487EB72A163849007C1A7D /* InterfaceConfiguration.swift in Sources */,
-				DF487EAB2A163849007C1A7D /* IPAddress+AddrInfo.swift in Sources */,
-				DF487EAD2A163849007C1A7D /* String+ArrayConversion.swift in Sources */,
-				DF487EB22A163849007C1A7D /* DNSServer.swift in Sources */,
-				DF487EBA2A163849007C1A7D /* FileManager+Extension.swift in Sources */,
-				DF487EBB2A163849007C1A7D /* Endpoint.swift in Sources */,
-				DF487EAE2A163849007C1A7D /* Array+ConcurrentMap.swift in Sources */,
-				DF487ECC2A16410F007C1A7D /* NotificationToken.swift in Sources */,
+				DF3A379F2AC59FE800B9729B /* Array+ConcurrentMap.swift in Sources */,
+				DF5B4C132AC562E200A20466 /* x25519.c in Sources */,
+				DF5B4C122AC562E200A20466 /* key.c in Sources */,
+				DF3A37992AC59FE800B9729B /* InterfaceConfiguration.swift in Sources */,
+				DF3A37952AC59FE800B9729B /* IPAddressRange.swift in Sources */,
+				DF3A37972AC59FE800B9729B /* DNSResolver.swift in Sources */,
+				DF3A379B2AC59FE800B9729B /* PeerConfiguration.swift in Sources */,
+				DF3A37942AC59FE800B9729B /* Endpoint.swift in Sources */,
+				DF3A37AC2AC59FEE00B9729B /* ErrorNotifier.swift in Sources */,
+				DF3A37B22AC59FF200B9729B /* Keychain.swift in Sources */,
+				DF3A37962AC59FE800B9729B /* TunnelConfiguration.swift in Sources */,
+				DF3A37B72AC59FF600B9729B /* NETunnelProviderProtocol+Extension.swift in Sources */,
+				DF3A37982AC59FE800B9729B /* DNSServer.swift in Sources */,
+				DF3A37AD2AC59FEE00B9729B /* PacketTunnelProvider.swift in Sources */,
+				DF3A37B02AC59FF200B9729B /* NotificationToken.swift in Sources */,
+				DF3A379D2AC59FE800B9729B /* WireGuardAdapter.swift in Sources */,
+				DF3A37BC2AC5A00300B9729B /* FileManager+Extension.swift in Sources */,
+				DF3A379A2AC59FE800B9729B /* PacketTunnelSettingsGenerator.swift in Sources */,
+				DF3A37B62AC59FF600B9729B /* String+ArrayConversion.swift in Sources */,
+				DF3A37BD2AC5A00300B9729B /* Logger.swift in Sources */,
+				DF5B4C212AC5631800A20466 /* ringlogger.c in Sources */,
+				DF3A37B82AC59FF600B9729B /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
+				DF3A379E2AC59FE800B9729B /* IPAddress+AddrInfo.swift in Sources */,
+				DF3A379C2AC59FE800B9729B /* PrivateKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -555,50 +484,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF487EEC2A164AF5007C1A7D /* WireGuardAdapter.swift in Sources */,
-				DF0990472A94E9CB00065BC9 /* MockTunnels.swift in Sources */,
-				DF487EE62A164AF5007C1A7D /* ringlogger.c in Sources */,
-				DF487EEB2A164AF5007C1A7D /* Keychain.swift in Sources */,
-				DF487EF82A164AF5007C1A7D /* DNSResolver.swift in Sources */,
-				DF487EF42A164AF5007C1A7D /* IPAddressRange.swift in Sources */,
-				DF09904D2A94E9CB00065BC9 /* TunnelStatus.swift in Sources */,
-				DF487EE42A164AF5007C1A7D /* Logger.swift in Sources */,
-				DF487EE92A164AF5007C1A7D /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
-				DF0990432A94E9CB00065BC9 /* ActivateOnDemandOption.swift in Sources */,
-				DF487EEA2A164AF5007C1A7D /* PacketTunnelSettingsGenerator.swift in Sources */,
-				DF487EE32A164AF5007C1A7D /* PeerConfiguration.swift in Sources */,
-				DF487EFA2A164AF5007C1A7D /* PrivateKey.swift in Sources */,
-				DF0990322A94E72000065BC9 /* LocalizationHelper.swift in Sources */,
-				DF487EED2A164AF5007C1A7D /* TunnelConfiguration.swift in Sources */,
-				DF0990212A94E69D00065BC9 /* WireGuardAppError.swift in Sources */,
-				DF62BE7F2A16953E0045030C /* ErrorNotifier.swift in Sources */,
-				DF0990532A94F4E900065BC9 /* RecentTunnelsTracker.swift in Sources */,
-				DF0990232A94E69D00065BC9 /* WireGuardResult.swift in Sources */,
-				DF487EE72A164AF5007C1A7D /* x25519.c in Sources */,
-				DF09904B2A94E9CB00065BC9 /* TunnelsManager.swift in Sources */,
-				DF0990502A94EB7800065BC9 /* TunnelConfiguration+UapiConfig.swift in Sources */,
-				DF487EEE2A164AF5007C1A7D /* NETunnelProviderProtocol+Extension.swift in Sources */,
-				DF0990492A94E9CB00065BC9 /* TunnelErrors.swift in Sources */,
-				DF62BE802A1695410045030C /* PacketTunnelProvider.swift in Sources */,
-				DF487EF22A164AF5007C1A7D /* key.c in Sources */,
-				DF487EF92A164AF5007C1A7D /* InterfaceConfiguration.swift in Sources */,
-				DF487EE52A164AF5007C1A7D /* IPAddress+AddrInfo.swift in Sources */,
-				DF487EEF2A164AF5007C1A7D /* String+ArrayConversion.swift in Sources */,
-				DF487EF62A164AF5007C1A7D /* DNSServer.swift in Sources */,
-				DF487EF72A164AF5007C1A7D /* FileManager+Extension.swift in Sources */,
-				DF487EE82A164AF5007C1A7D /* Endpoint.swift in Sources */,
-				DF487EF32A164AF5007C1A7D /* Array+ConcurrentMap.swift in Sources */,
-				DF487EF52A164AF5007C1A7D /* NotificationToken.swift in Sources */,
+				DF3A37AB2AC59FEA00B9729B /* Array+ConcurrentMap.swift in Sources */,
+				DF5B4C1A2AC562E900A20466 /* x25519.c in Sources */,
+				DF5B4C182AC562E900A20466 /* key.c in Sources */,
+				DF3A37A52AC59FEA00B9729B /* InterfaceConfiguration.swift in Sources */,
+				DF3A37A12AC59FEA00B9729B /* IPAddressRange.swift in Sources */,
+				DF3A37A32AC59FEA00B9729B /* DNSResolver.swift in Sources */,
+				DF3A37A72AC59FEA00B9729B /* PeerConfiguration.swift in Sources */,
+				DF3A37A02AC59FEA00B9729B /* Endpoint.swift in Sources */,
+				DF3A37AE2AC59FEF00B9729B /* ErrorNotifier.swift in Sources */,
+				DF3A37B52AC59FF300B9729B /* Keychain.swift in Sources */,
+				DF3A37A22AC59FEA00B9729B /* TunnelConfiguration.swift in Sources */,
+				DF3A37BA2AC59FF700B9729B /* NETunnelProviderProtocol+Extension.swift in Sources */,
+				DF3A37A42AC59FEA00B9729B /* DNSServer.swift in Sources */,
+				DF3A37AF2AC59FEF00B9729B /* PacketTunnelProvider.swift in Sources */,
+				DF3A37B32AC59FF300B9729B /* NotificationToken.swift in Sources */,
+				DF3A37A92AC59FEA00B9729B /* WireGuardAdapter.swift in Sources */,
+				DF3A37BF2AC5A00400B9729B /* FileManager+Extension.swift in Sources */,
+				DF3A37A62AC59FEA00B9729B /* PacketTunnelSettingsGenerator.swift in Sources */,
+				DF3A37B92AC59FF700B9729B /* String+ArrayConversion.swift in Sources */,
+				DF3A37C02AC5A00400B9729B /* Logger.swift in Sources */,
+				DF5B4C242AC5632000A20466 /* ringlogger.c in Sources */,
+				DF3A37BB2AC59FF700B9729B /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
+				DF3A37AA2AC59FEA00B9729B /* IPAddress+AddrInfo.swift in Sources */,
+				DF3A37A82AC59FEA00B9729B /* PrivateKey.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		DF487E9B2A163849007C1A7D /* PBXTargetDependency */ = {
+		DF0277CD2AC4320A00539545 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 2302A81927C6B34A009F8664 /* WireGuardBridgemacOS */;
-			targetProxy = DF487E9C2A163849007C1A7D /* PBXContainerItemProxy */;
+			targetProxy = DF0277CC2AC4320A00539545 /* PBXContainerItemProxy */;
 		};
 		DF487ED82A164AF5007C1A7D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -667,6 +586,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -725,6 +645,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -804,6 +725,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -831,6 +753,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -841,6 +764,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -868,6 +792,7 @@
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
@@ -878,6 +803,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -905,6 +831,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -916,6 +843,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -943,6 +871,7 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
