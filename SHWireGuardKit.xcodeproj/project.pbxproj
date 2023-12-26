@@ -7,6 +7,54 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38CC50362B3AE1B60021606C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50352B3AE1B60021606C /* APIConstants.swift */; };
+		38CC50372B3AE1B60021606C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50352B3AE1B60021606C /* APIConstants.swift */; };
+		38CC50392B3AE1D40021606C /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50382B3AE1D40021606C /* HttpRequestHelper.swift */; };
+		38CC503A2B3AE1D40021606C /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50382B3AE1D40021606C /* HttpRequestHelper.swift */; };
+		38CC503C2B3AE1EC0021606C /* VPNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC503B2B3AE1EC0021606C /* VPNService.swift */; };
+		38CC503D2B3AE1EC0021606C /* VPNService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC503B2B3AE1EC0021606C /* VPNService.swift */; };
+		38CC503F2B3AE20D0021606C /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC503E2B3AE20D0021606C /* VPNManager.swift */; };
+		38CC50402B3AE20D0021606C /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC503E2B3AE20D0021606C /* VPNManager.swift */; };
+		38CC50422B3AE2660021606C /* TunnelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50412B3AE2660021606C /* TunnelsManager.swift */; };
+		38CC50432B3AE2660021606C /* TunnelsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50412B3AE2660021606C /* TunnelsManager.swift */; };
+		38CC50452B3AE2800021606C /* TunnelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50442B3AE2800021606C /* TunnelError.swift */; };
+		38CC50462B3AE2800021606C /* TunnelError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50442B3AE2800021606C /* TunnelError.swift */; };
+		38CC50482B3AE29C0021606C /* WireGuardAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50472B3AE29C0021606C /* WireGuardAppError.swift */; };
+		38CC50492B3AE29C0021606C /* WireGuardAppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50472B3AE29C0021606C /* WireGuardAppError.swift */; };
+		38CC504B2B3AE2B40021606C /* ActivateOnDemandOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC504A2B3AE2B40021606C /* ActivateOnDemandOption.swift */; };
+		38CC504C2B3AE2B40021606C /* ActivateOnDemandOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC504A2B3AE2B40021606C /* ActivateOnDemandOption.swift */; };
+		38CC504E2B3AE2D00021606C /* RecentTunnelsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC504D2B3AE2D00021606C /* RecentTunnelsTracker.swift */; };
+		38CC504F2B3AE2D00021606C /* RecentTunnelsTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC504D2B3AE2D00021606C /* RecentTunnelsTracker.swift */; };
+		38CC50512B3AE2EC0021606C /* TunnelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50502B3AE2EC0021606C /* TunnelStatus.swift */; };
+		38CC50522B3AE2EC0021606C /* TunnelStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50502B3AE2EC0021606C /* TunnelStatus.swift */; };
+		38CC50542B3AE3110021606C /* TunnelConfiguration+UapiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50532B3AE3110021606C /* TunnelConfiguration+UapiConfig.swift */; };
+		38CC50552B3AE3110021606C /* TunnelConfiguration+UapiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50532B3AE3110021606C /* TunnelConfiguration+UapiConfig.swift */; };
+		38CC50572B3AE56F0021606C /* VPNRegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50562B3AE56F0021606C /* VPNRegionModel.swift */; };
+		38CC50582B3AE56F0021606C /* VPNRegionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50562B3AE56F0021606C /* VPNRegionModel.swift */; };
+		38CC505A2B3AE5AE0021606C /* ConnectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50592B3AE5AE0021606C /* ConnectModel.swift */; };
+		38CC505B2B3AE5AE0021606C /* ConnectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50592B3AE5AE0021606C /* ConnectModel.swift */; };
+		38CC505D2B3AE60A0021606C /* WireGuardConstanst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC505C2B3AE60A0021606C /* WireGuardConstanst.swift */; };
+		38CC505E2B3AE60A0021606C /* WireGuardConstanst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC505C2B3AE60A0021606C /* WireGuardConstanst.swift */; };
+		38CC50602B3AE68A0021606C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC505F2B3AE68A0021606C /* KeychainWrapper.swift */; };
+		38CC50612B3AE68A0021606C /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC505F2B3AE68A0021606C /* KeychainWrapper.swift */; };
+		38CC50632B3AE7030021606C /* VPNHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50622B3AE7030021606C /* VPNHelpers.swift */; };
+		38CC50642B3AE7030021606C /* VPNHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50622B3AE7030021606C /* VPNHelpers.swift */; };
+		38CC50662B3AE7360021606C /* Curve25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50652B3AE7360021606C /* Curve25519.swift */; };
+		38CC50672B3AE7360021606C /* Curve25519.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50652B3AE7360021606C /* Curve25519.swift */; };
+		38CC50692B3AE7CB0021606C /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50682B3AE7CB0021606C /* KeyChain.swift */; };
+		38CC506A2B3AE7CB0021606C /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50682B3AE7CB0021606C /* KeyChain.swift */; };
+		38CC506D2B3AE8510021606C /* x25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CC506B2B3AE8510021606C /* x25519.h */; };
+		38CC506E2B3AE8510021606C /* x25519.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CC506B2B3AE8510021606C /* x25519.h */; };
+		38CC506F2B3AE8510021606C /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 38CC506C2B3AE8510021606C /* x25519.c */; };
+		38CC50702B3AE8510021606C /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = 38CC506C2B3AE8510021606C /* x25519.c */; };
+		38CC50792B3AE9820021606C /* Data+KeyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50782B3AE9820021606C /* Data+KeyEncoding.swift */; };
+		38CC507A2B3AE9820021606C /* Data+KeyEncoding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50782B3AE9820021606C /* Data+KeyEncoding.swift */; };
+		38CC51192B3AFFEA0021606C /* key.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CC51172B3AFFEA0021606C /* key.h */; };
+		38CC511A2B3AFFEA0021606C /* key.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CC51172B3AFFEA0021606C /* key.h */; };
+		38CC511B2B3AFFEA0021606C /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 38CC51182B3AFFEA0021606C /* key.c */; };
+		38CC511C2B3AFFEA0021606C /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = 38CC51182B3AFFEA0021606C /* key.c */; };
+		38CC511E2B3B01F10021606C /* WireGuardKitC.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CC511D2B3B01F10021606C /* WireGuardKitC.h */; };
+		38CC511F2B3B01F10021606C /* WireGuardKitC.h in Headers */ = {isa = PBXBuildFile; fileRef = 38CC511D2B3B01F10021606C /* WireGuardKitC.h */; };
 		DF0277CF2AC4326600539545 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0277CE2AC4326500539545 /* libwg-go.a */; };
 		DF3A37942AC59FE800B9729B /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37882AC59F7900B9729B /* Endpoint.swift */; };
 		DF3A37952AC59FE800B9729B /* IPAddressRange.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A378E2AC59F7A00B9729B /* IPAddressRange.swift */; };
@@ -37,9 +85,9 @@
 		DF3A37AE2AC59FEF00B9729B /* ErrorNotifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37842AC59F5600B9729B /* ErrorNotifier.swift */; };
 		DF3A37AF2AC59FEF00B9729B /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37852AC59F5600B9729B /* PacketTunnelProvider.swift */; };
 		DF3A37B02AC59FF200B9729B /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377B2AC59EAB00B9729B /* NotificationToken.swift */; };
-		DF3A37B22AC59FF200B9729B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37782AC59EAB00B9729B /* Keychain.swift */; };
+		DF3A37B22AC59FF200B9729B /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37782AC59EAB00B9729B /* KeyChainManager.swift */; };
 		DF3A37B32AC59FF300B9729B /* NotificationToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377B2AC59EAB00B9729B /* NotificationToken.swift */; };
-		DF3A37B52AC59FF300B9729B /* Keychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37782AC59EAB00B9729B /* Keychain.swift */; };
+		DF3A37B52AC59FF300B9729B /* KeyChainManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37782AC59EAB00B9729B /* KeyChainManager.swift */; };
 		DF3A37B62AC59FF600B9729B /* String+ArrayConversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377F2AC59EAB00B9729B /* String+ArrayConversion.swift */; };
 		DF3A37B72AC59FF600B9729B /* NETunnelProviderProtocol+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377D2AC59EAB00B9729B /* NETunnelProviderProtocol+Extension.swift */; };
 		DF3A37B82AC59FF600B9729B /* TunnelConfiguration+WgQuickConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A377E2AC59EAB00B9729B /* TunnelConfiguration+WgQuickConfig.swift */; };
@@ -52,22 +100,6 @@
 		DF3A37C02AC5A00400B9729B /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3A37812AC59EAB00B9729B /* Logger.swift */; };
 		DF487ED22A16472D007C1A7D /* SHWireGuardKitmacOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487EC62A163D14007C1A7D /* SHWireGuardKitmacOS.h */; };
 		DF487F042A164B41007C1A7D /* SHWireGuardKitiOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487F032A164B41007C1A7D /* SHWireGuardKitiOS.h */; };
-		DF5B4C122AC562E200A20466 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C0D2AC562E200A20466 /* key.c */; };
-		DF5B4C132AC562E200A20466 /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C0E2AC562E200A20466 /* x25519.c */; };
-		DF5B4C142AC562E200A20466 /* x25519.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C0F2AC562E200A20466 /* x25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C152AC562E200A20466 /* WireGuardKitC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C102AC562E200A20466 /* WireGuardKitC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C162AC562E200A20466 /* key.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C112AC562E200A20466 /* key.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C172AC562E900A20466 /* x25519.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C0F2AC562E200A20466 /* x25519.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C182AC562E900A20466 /* key.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C0D2AC562E200A20466 /* key.c */; };
-		DF5B4C192AC562E900A20466 /* key.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C112AC562E200A20466 /* key.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C1A2AC562E900A20466 /* x25519.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C0E2AC562E200A20466 /* x25519.c */; };
-		DF5B4C1B2AC562E900A20466 /* WireGuardKitC.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C102AC562E200A20466 /* WireGuardKitC.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C1D2AC5630000A20466 /* wireguard.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C1C2AC5630000A20466 /* wireguard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C202AC5631800A20466 /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C1E2AC5631700A20466 /* ringlogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C212AC5631800A20466 /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C1F2AC5631700A20466 /* ringlogger.c */; };
-		DF5B4C222AC5632000A20466 /* wireguard.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C1C2AC5630000A20466 /* wireguard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C232AC5632000A20466 /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = DF5B4C1E2AC5631700A20466 /* ringlogger.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF5B4C242AC5632000A20466 /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = DF5B4C1F2AC5631700A20466 /* ringlogger.c */; };
 		DF7C47712A20C43500949CB5 /* libwg-go.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7C476E2A20BF3000949CB5 /* libwg-go.a */; };
 		DFCEC34D2A1CB91100DD2E1D /* SHWireGuardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DFCEC34E2A1CB91300DD2E1D /* SHWireGuardKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -93,9 +125,33 @@
 /* Begin PBXFileReference section */
 		23187DED292E8F7A00ED302A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		23916CCE28378B1F0046A972 /* build_framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_framework.sh; sourceTree = "<group>"; };
+		38CC50352B3AE1B60021606C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		38CC50382B3AE1D40021606C /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
+		38CC503B2B3AE1EC0021606C /* VPNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNService.swift; sourceTree = "<group>"; };
+		38CC503E2B3AE20D0021606C /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		38CC50412B3AE2660021606C /* TunnelsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelsManager.swift; sourceTree = "<group>"; };
+		38CC50442B3AE2800021606C /* TunnelError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelError.swift; sourceTree = "<group>"; };
+		38CC50472B3AE29C0021606C /* WireGuardAppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardAppError.swift; sourceTree = "<group>"; };
+		38CC504A2B3AE2B40021606C /* ActivateOnDemandOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateOnDemandOption.swift; sourceTree = "<group>"; };
+		38CC504D2B3AE2D00021606C /* RecentTunnelsTracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTunnelsTracker.swift; sourceTree = "<group>"; };
+		38CC50502B3AE2EC0021606C /* TunnelStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelStatus.swift; sourceTree = "<group>"; };
+		38CC50532B3AE3110021606C /* TunnelConfiguration+UapiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+UapiConfig.swift"; sourceTree = "<group>"; };
+		38CC50562B3AE56F0021606C /* VPNRegionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNRegionModel.swift; sourceTree = "<group>"; };
+		38CC50592B3AE5AE0021606C /* ConnectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectModel.swift; sourceTree = "<group>"; };
+		38CC505C2B3AE60A0021606C /* WireGuardConstanst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireGuardConstanst.swift; sourceTree = "<group>"; };
+		38CC505F2B3AE68A0021606C /* KeychainWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
+		38CC50622B3AE7030021606C /* VPNHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNHelpers.swift; sourceTree = "<group>"; };
+		38CC50652B3AE7360021606C /* Curve25519.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Curve25519.swift; sourceTree = "<group>"; };
+		38CC50682B3AE7CB0021606C /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
+		38CC506B2B3AE8510021606C /* x25519.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = x25519.h; path = SHWireGuardKit/WireGuardKitC/x25519.h; sourceTree = SOURCE_ROOT; };
+		38CC506C2B3AE8510021606C /* x25519.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = x25519.c; path = SHWireGuardKit/WireGuardKitC/x25519.c; sourceTree = SOURCE_ROOT; };
+		38CC50782B3AE9820021606C /* Data+KeyEncoding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+KeyEncoding.swift"; sourceTree = "<group>"; };
+		38CC51172B3AFFEA0021606C /* key.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
+		38CC51182B3AFFEA0021606C /* key.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
+		38CC511D2B3B01F10021606C /* WireGuardKitC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WireGuardKitC.h; sourceTree = "<group>"; };
 		DF0277CE2AC4326500539545 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../Library/Developer/Xcode/DerivedData/SHWireGuardKit-bjrqdoedgdtnygceezyaalbhmdon/Build/Products/Debug-iphoneos/libwg-go.a"; sourceTree = "<group>"; };
 		DF3A37772AC59EAB00B9729B /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
-		DF3A37782AC59EAB00B9729B /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
+		DF3A37782AC59EAB00B9729B /* KeyChainManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainManager.swift; sourceTree = "<group>"; };
 		DF3A377B2AC59EAB00B9729B /* NotificationToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationToken.swift; sourceTree = "<group>"; };
 		DF3A377D2AC59EAB00B9729B /* NETunnelProviderProtocol+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NETunnelProviderProtocol+Extension.swift"; sourceTree = "<group>"; };
 		DF3A377E2AC59EAB00B9729B /* TunnelConfiguration+WgQuickConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TunnelConfiguration+WgQuickConfig.swift"; sourceTree = "<group>"; };
@@ -120,14 +176,6 @@
 		DF487ECF2A1642C1007C1A7D /* SHWireGuardKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWireGuardKit.h; sourceTree = "<group>"; };
 		DF487F012A164AF5007C1A7D /* SHWireGuardKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SHWireGuardKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF487F032A164B41007C1A7D /* SHWireGuardKitiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SHWireGuardKitiOS.h; sourceTree = "<group>"; };
-		DF5B4C0D2AC562E200A20466 /* key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = key.c; sourceTree = "<group>"; };
-		DF5B4C0E2AC562E200A20466 /* x25519.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = x25519.c; sourceTree = "<group>"; };
-		DF5B4C0F2AC562E200A20466 /* x25519.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = x25519.h; sourceTree = "<group>"; };
-		DF5B4C102AC562E200A20466 /* WireGuardKitC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WireGuardKitC.h; sourceTree = "<group>"; };
-		DF5B4C112AC562E200A20466 /* key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = key.h; sourceTree = "<group>"; };
-		DF5B4C1C2AC5630000A20466 /* wireguard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wireguard.h; path = wireguard/Sources/WireGuardKitGo/wireguard.h; sourceTree = SOURCE_ROOT; };
-		DF5B4C1E2AC5631700A20466 /* ringlogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ringlogger.h; path = wireguard/Sources/Shared/Logging/ringlogger.h; sourceTree = SOURCE_ROOT; };
-		DF5B4C1F2AC5631700A20466 /* ringlogger.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ringlogger.c; path = wireguard/Sources/Shared/Logging/ringlogger.c; sourceTree = SOURCE_ROOT; };
 		DF7C476E2A20BF3000949CB5 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../Library/Developer/Xcode/DerivedData/SHWireGuardKit-bjrqdoedgdtnygceezyaalbhmdon/Build/Products/Debug/libwg-go.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,7 +202,6 @@
 		2302A67C27C6B153009F8664 = {
 			isa = PBXGroup;
 			children = (
-				DF5B4C0C2AC5629800A20466 /* WireGuardKitC */,
 				23916CCE28378B1F0046A972 /* build_framework.sh */,
 				23187DED292E8F7A00ED302A /* Package.swift */,
 				DF487ECE2A16428F007C1A7D /* SHWireGuardKit */,
@@ -183,14 +230,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		38CC50712B3AE8C20021606C /* WireGuardKitC */ = {
+			isa = PBXGroup;
+			children = (
+				38CC506C2B3AE8510021606C /* x25519.c */,
+				38CC506B2B3AE8510021606C /* x25519.h */,
+				38CC51172B3AFFEA0021606C /* key.h */,
+				38CC51182B3AFFEA0021606C /* key.c */,
+				38CC511D2B3B01F10021606C /* WireGuardKitC.h */,
+			);
+			path = WireGuardKitC;
+			sourceTree = "<group>";
+		};
 		DF3A37762AC59EAB00B9729B /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				DF3A37782AC59EAB00B9729B /* Keychain.swift */,
+				DF3A37782AC59EAB00B9729B /* KeyChainManager.swift */,
 				DF3A377B2AC59EAB00B9729B /* NotificationToken.swift */,
+				38CC503E2B3AE20D0021606C /* VPNManager.swift */,
+				38CC50382B3AE1D40021606C /* HttpRequestHelper.swift */,
+				38CC50412B3AE2660021606C /* TunnelsManager.swift */,
+				38CC50352B3AE1B60021606C /* APIConstants.swift */,
+				38CC503B2B3AE1EC0021606C /* VPNService.swift */,
 				DF3A377C2AC59EAB00B9729B /* Model */,
 				DF3A37802AC59EAB00B9729B /* Logging */,
 				DF3A37772AC59EAB00B9729B /* FileManager+Extension.swift */,
+				38CC505C2B3AE60A0021606C /* WireGuardConstanst.swift */,
+				38CC505F2B3AE68A0021606C /* KeychainWrapper.swift */,
+				38CC50622B3AE7030021606C /* VPNHelpers.swift */,
+				38CC50652B3AE7360021606C /* Curve25519.swift */,
+				38CC50682B3AE7CB0021606C /* KeyChain.swift */,
+				38CC50782B3AE9820021606C /* Data+KeyEncoding.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -198,9 +268,17 @@
 		DF3A377C2AC59EAB00B9729B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				38CC50562B3AE56F0021606C /* VPNRegionModel.swift */,
 				DF3A377F2AC59EAB00B9729B /* String+ArrayConversion.swift */,
 				DF3A377D2AC59EAB00B9729B /* NETunnelProviderProtocol+Extension.swift */,
 				DF3A377E2AC59EAB00B9729B /* TunnelConfiguration+WgQuickConfig.swift */,
+				38CC50442B3AE2800021606C /* TunnelError.swift */,
+				38CC50472B3AE29C0021606C /* WireGuardAppError.swift */,
+				38CC504A2B3AE2B40021606C /* ActivateOnDemandOption.swift */,
+				38CC504D2B3AE2D00021606C /* RecentTunnelsTracker.swift */,
+				38CC50502B3AE2EC0021606C /* TunnelStatus.swift */,
+				38CC50532B3AE3110021606C /* TunnelConfiguration+UapiConfig.swift */,
+				38CC50592B3AE5AE0021606C /* ConnectModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -252,6 +330,7 @@
 		DF487ECE2A16428F007C1A7D /* SHWireGuardKit */ = {
 			isa = PBXGroup;
 			children = (
+				38CC50712B3AE8C20021606C /* WireGuardKitC */,
 				DF3A37872AC59F7900B9729B /* WireGuardKit */,
 				DF3A37832AC59F5600B9729B /* PacketProvider */,
 				DF3A37762AC59EAB00B9729B /* Shared */,
@@ -268,22 +347,6 @@
 			path = SHWireGuardKitiOS;
 			sourceTree = "<group>";
 		};
-		DF5B4C0C2AC5629800A20466 /* WireGuardKitC */ = {
-			isa = PBXGroup;
-			children = (
-				DF5B4C1F2AC5631700A20466 /* ringlogger.c */,
-				DF5B4C1E2AC5631700A20466 /* ringlogger.h */,
-				DF5B4C1C2AC5630000A20466 /* wireguard.h */,
-				DF5B4C0D2AC562E200A20466 /* key.c */,
-				DF5B4C112AC562E200A20466 /* key.h */,
-				DF5B4C102AC562E200A20466 /* WireGuardKitC.h */,
-				DF5B4C0E2AC562E200A20466 /* x25519.c */,
-				DF5B4C0F2AC562E200A20466 /* x25519.h */,
-			);
-			name = WireGuardKitC;
-			path = wireguard/Sources/WireGuardKitC;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -291,12 +354,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF5B4C162AC562E200A20466 /* key.h in Headers */,
-				DF5B4C142AC562E200A20466 /* x25519.h in Headers */,
-				DF5B4C202AC5631800A20466 /* ringlogger.h in Headers */,
-				DF5B4C1D2AC5630000A20466 /* wireguard.h in Headers */,
+				38CC51192B3AFFEA0021606C /* key.h in Headers */,
+				38CC506D2B3AE8510021606C /* x25519.h in Headers */,
 				DFCEC34E2A1CB91300DD2E1D /* SHWireGuardKit.h in Headers */,
-				DF5B4C152AC562E200A20466 /* WireGuardKitC.h in Headers */,
+				38CC511E2B3B01F10021606C /* WireGuardKitC.h in Headers */,
 				DF487ED22A16472D007C1A7D /* SHWireGuardKitmacOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,12 +366,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF5B4C192AC562E900A20466 /* key.h in Headers */,
+				38CC511A2B3AFFEA0021606C /* key.h in Headers */,
 				DFCEC34D2A1CB91100DD2E1D /* SHWireGuardKit.h in Headers */,
-				DF5B4C172AC562E900A20466 /* x25519.h in Headers */,
-				DF5B4C222AC5632000A20466 /* wireguard.h in Headers */,
-				DF5B4C1B2AC562E900A20466 /* WireGuardKitC.h in Headers */,
-				DF5B4C232AC5632000A20466 /* ringlogger.h in Headers */,
+				38CC506E2B3AE8510021606C /* x25519.h in Headers */,
+				38CC511F2B3B01F10021606C /* WireGuardKitC.h in Headers */,
 				DF487F042A164B41007C1A7D /* SHWireGuardKitiOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,30 +512,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38CC503F2B3AE20D0021606C /* VPNManager.swift in Sources */,
 				DF3A379F2AC59FE800B9729B /* Array+ConcurrentMap.swift in Sources */,
-				DF5B4C132AC562E200A20466 /* x25519.c in Sources */,
-				DF5B4C122AC562E200A20466 /* key.c in Sources */,
+				38CC50662B3AE7360021606C /* Curve25519.swift in Sources */,
+				38CC50512B3AE2EC0021606C /* TunnelStatus.swift in Sources */,
 				DF3A37992AC59FE800B9729B /* InterfaceConfiguration.swift in Sources */,
 				DF3A37952AC59FE800B9729B /* IPAddressRange.swift in Sources */,
+				38CC503C2B3AE1EC0021606C /* VPNService.swift in Sources */,
+				38CC504B2B3AE2B40021606C /* ActivateOnDemandOption.swift in Sources */,
 				DF3A37972AC59FE800B9729B /* DNSResolver.swift in Sources */,
+				38CC50632B3AE7030021606C /* VPNHelpers.swift in Sources */,
+				38CC505D2B3AE60A0021606C /* WireGuardConstanst.swift in Sources */,
 				DF3A379B2AC59FE800B9729B /* PeerConfiguration.swift in Sources */,
+				38CC50482B3AE29C0021606C /* WireGuardAppError.swift in Sources */,
 				DF3A37942AC59FE800B9729B /* Endpoint.swift in Sources */,
 				DF3A37AC2AC59FEE00B9729B /* ErrorNotifier.swift in Sources */,
-				DF3A37B22AC59FF200B9729B /* Keychain.swift in Sources */,
+				38CC506F2B3AE8510021606C /* x25519.c in Sources */,
+				DF3A37B22AC59FF200B9729B /* KeyChainManager.swift in Sources */,
 				DF3A37962AC59FE800B9729B /* TunnelConfiguration.swift in Sources */,
+				38CC50362B3AE1B60021606C /* APIConstants.swift in Sources */,
+				38CC50452B3AE2800021606C /* TunnelError.swift in Sources */,
 				DF3A37B72AC59FF600B9729B /* NETunnelProviderProtocol+Extension.swift in Sources */,
 				DF3A37982AC59FE800B9729B /* DNSServer.swift in Sources */,
 				DF3A37AD2AC59FEE00B9729B /* PacketTunnelProvider.swift in Sources */,
 				DF3A37B02AC59FF200B9729B /* NotificationToken.swift in Sources */,
+				38CC50692B3AE7CB0021606C /* KeyChain.swift in Sources */,
 				DF3A379D2AC59FE800B9729B /* WireGuardAdapter.swift in Sources */,
+				38CC50602B3AE68A0021606C /* KeychainWrapper.swift in Sources */,
 				DF3A37BC2AC5A00300B9729B /* FileManager+Extension.swift in Sources */,
 				DF3A379A2AC59FE800B9729B /* PacketTunnelSettingsGenerator.swift in Sources */,
+				38CC50392B3AE1D40021606C /* HttpRequestHelper.swift in Sources */,
+				38CC504E2B3AE2D00021606C /* RecentTunnelsTracker.swift in Sources */,
 				DF3A37B62AC59FF600B9729B /* String+ArrayConversion.swift in Sources */,
+				38CC50542B3AE3110021606C /* TunnelConfiguration+UapiConfig.swift in Sources */,
+				38CC511B2B3AFFEA0021606C /* key.c in Sources */,
+				38CC50792B3AE9820021606C /* Data+KeyEncoding.swift in Sources */,
 				DF3A37BD2AC5A00300B9729B /* Logger.swift in Sources */,
-				DF5B4C212AC5631800A20466 /* ringlogger.c in Sources */,
 				DF3A37B82AC59FF600B9729B /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
+				38CC50572B3AE56F0021606C /* VPNRegionModel.swift in Sources */,
+				38CC505A2B3AE5AE0021606C /* ConnectModel.swift in Sources */,
 				DF3A379E2AC59FE800B9729B /* IPAddress+AddrInfo.swift in Sources */,
 				DF3A379C2AC59FE800B9729B /* PrivateKey.swift in Sources */,
+				38CC50422B3AE2660021606C /* TunnelsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,29 +562,47 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF3A37AB2AC59FEA00B9729B /* Array+ConcurrentMap.swift in Sources */,
-				DF5B4C1A2AC562E900A20466 /* x25519.c in Sources */,
-				DF5B4C182AC562E900A20466 /* key.c in Sources */,
+				38CC50672B3AE7360021606C /* Curve25519.swift in Sources */,
+				38CC50522B3AE2EC0021606C /* TunnelStatus.swift in Sources */,
+				38CC50402B3AE20D0021606C /* VPNManager.swift in Sources */,
 				DF3A37A52AC59FEA00B9729B /* InterfaceConfiguration.swift in Sources */,
 				DF3A37A12AC59FEA00B9729B /* IPAddressRange.swift in Sources */,
+				38CC503D2B3AE1EC0021606C /* VPNService.swift in Sources */,
+				38CC504C2B3AE2B40021606C /* ActivateOnDemandOption.swift in Sources */,
 				DF3A37A32AC59FEA00B9729B /* DNSResolver.swift in Sources */,
+				38CC50642B3AE7030021606C /* VPNHelpers.swift in Sources */,
+				38CC505E2B3AE60A0021606C /* WireGuardConstanst.swift in Sources */,
 				DF3A37A72AC59FEA00B9729B /* PeerConfiguration.swift in Sources */,
+				38CC50492B3AE29C0021606C /* WireGuardAppError.swift in Sources */,
 				DF3A37A02AC59FEA00B9729B /* Endpoint.swift in Sources */,
 				DF3A37AE2AC59FEF00B9729B /* ErrorNotifier.swift in Sources */,
-				DF3A37B52AC59FF300B9729B /* Keychain.swift in Sources */,
+				38CC50702B3AE8510021606C /* x25519.c in Sources */,
+				DF3A37B52AC59FF300B9729B /* KeyChainManager.swift in Sources */,
 				DF3A37A22AC59FEA00B9729B /* TunnelConfiguration.swift in Sources */,
+				38CC50372B3AE1B60021606C /* APIConstants.swift in Sources */,
+				38CC50462B3AE2800021606C /* TunnelError.swift in Sources */,
 				DF3A37BA2AC59FF700B9729B /* NETunnelProviderProtocol+Extension.swift in Sources */,
 				DF3A37A42AC59FEA00B9729B /* DNSServer.swift in Sources */,
 				DF3A37AF2AC59FEF00B9729B /* PacketTunnelProvider.swift in Sources */,
 				DF3A37B32AC59FF300B9729B /* NotificationToken.swift in Sources */,
+				38CC506A2B3AE7CB0021606C /* KeyChain.swift in Sources */,
 				DF3A37A92AC59FEA00B9729B /* WireGuardAdapter.swift in Sources */,
+				38CC50612B3AE68A0021606C /* KeychainWrapper.swift in Sources */,
 				DF3A37BF2AC5A00400B9729B /* FileManager+Extension.swift in Sources */,
 				DF3A37A62AC59FEA00B9729B /* PacketTunnelSettingsGenerator.swift in Sources */,
+				38CC503A2B3AE1D40021606C /* HttpRequestHelper.swift in Sources */,
+				38CC504F2B3AE2D00021606C /* RecentTunnelsTracker.swift in Sources */,
 				DF3A37B92AC59FF700B9729B /* String+ArrayConversion.swift in Sources */,
+				38CC50552B3AE3110021606C /* TunnelConfiguration+UapiConfig.swift in Sources */,
+				38CC511C2B3AFFEA0021606C /* key.c in Sources */,
+				38CC507A2B3AE9820021606C /* Data+KeyEncoding.swift in Sources */,
 				DF3A37C02AC5A00400B9729B /* Logger.swift in Sources */,
-				DF5B4C242AC5632000A20466 /* ringlogger.c in Sources */,
 				DF3A37BB2AC59FF700B9729B /* TunnelConfiguration+WgQuickConfig.swift in Sources */,
+				38CC50582B3AE56F0021606C /* VPNRegionModel.swift in Sources */,
+				38CC505B2B3AE5AE0021606C /* ConnectModel.swift in Sources */,
 				DF3A37AA2AC59FEA00B9729B /* IPAddress+AddrInfo.swift in Sources */,
 				DF3A37A82AC59FEA00B9729B /* PrivateKey.swift in Sources */,
+				38CC50432B3AE2660021606C /* TunnelsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

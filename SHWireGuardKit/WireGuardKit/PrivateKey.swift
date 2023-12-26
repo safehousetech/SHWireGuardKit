@@ -12,7 +12,7 @@ public class PrivateKey: BaseKey {
     /// Derived public key
     public var publicKey: PublicKey {
         return rawValue.withUnsafeBytes { (privateKeyBufferPointer: UnsafeRawBufferPointer) -> PublicKey in
-            var publicKeyData = Data(repeating: 0, count: Int(WG_KEY_LEN))
+            var publicKeyData = Data(repeating: 0, count: Int(32))
             let privateKeyBytes = privateKeyBufferPointer.baseAddress!.assumingMemoryBound(to: UInt8.self)
 
             publicKeyData.withUnsafeMutableBytes { (publicKeyBufferPointer: UnsafeMutableRawBufferPointer) in
@@ -26,7 +26,7 @@ public class PrivateKey: BaseKey {
 
     /// Initialize new private key
     convenience public init() {
-        var privateKeyData = Data(repeating: 0, count: Int(WG_KEY_LEN))
+        var privateKeyData = Data(repeating: 0, count: Int(32))
         privateKeyData.withUnsafeMutableBytes { (rawBufferPointer: UnsafeMutableRawBufferPointer) in
             let privateKeyBytes = rawBufferPointer.baseAddress!.assumingMemoryBound(to: UInt8.self)
             curve25519_generate_private_key(privateKeyBytes)
@@ -50,7 +50,7 @@ public class BaseKey: RawRepresentable, Equatable, Hashable {
     public var hexKey: String {
         return rawValue.withUnsafeBytes { (rawBufferPointer: UnsafeRawBufferPointer) -> String in
             let inBytes = rawBufferPointer.baseAddress!.assumingMemoryBound(to: UInt8.self)
-            var outBytes = [CChar](repeating: 0, count: Int(WG_KEY_LEN_HEX))
+            var outBytes = [CChar](repeating: 0, count: Int(32))
             key_to_hex(&outBytes, inBytes)
             return String(cString: outBytes, encoding: .ascii)!
         }
@@ -60,7 +60,7 @@ public class BaseKey: RawRepresentable, Equatable, Hashable {
     public var base64Key: String {
         return rawValue.withUnsafeBytes { (rawBufferPointer: UnsafeRawBufferPointer) -> String in
             let inBytes = rawBufferPointer.baseAddress!.assumingMemoryBound(to: UInt8.self)
-            var outBytes = [CChar](repeating: 0, count: Int(WG_KEY_LEN_BASE64))
+            var outBytes = [CChar](repeating: 0, count: Int(32))
             key_to_base64(&outBytes, inBytes)
             return String(cString: outBytes, encoding: .ascii)!
         }
@@ -77,7 +77,7 @@ public class BaseKey: RawRepresentable, Equatable, Hashable {
 
     /// Initialize the key with hex representation
     public convenience init?(hexKey: String) {
-        var bytes = Data(repeating: 0, count: Int(WG_KEY_LEN))
+        var bytes = Data(repeating: 0, count: Int(32))
         let success = bytes.withUnsafeMutableBytes { (bufferPointer: UnsafeMutableRawBufferPointer) -> Bool in
             return key_from_hex(bufferPointer.baseAddress!.assumingMemoryBound(to: UInt8.self), hexKey)
         }
@@ -90,7 +90,7 @@ public class BaseKey: RawRepresentable, Equatable, Hashable {
 
     /// Initialize the key with base64 representation
     public convenience init?(base64Key: String) {
-        var bytes = Data(repeating: 0, count: Int(WG_KEY_LEN))
+        var bytes = Data(repeating: 0, count: Int(32))
         let success = bytes.withUnsafeMutableBytes { (bufferPointer: UnsafeMutableRawBufferPointer) -> Bool in
             return key_from_base64(bufferPointer.baseAddress!.assumingMemoryBound(to: UInt8.self), base64Key)
         }
