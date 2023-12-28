@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38B8A46B2B3C07E70041C184 /* WireGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B8A46A2B3C07E70041C184 /* WireGuard.h */; };
+		38B8A46C2B3C07E70041C184 /* WireGuard.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B8A46A2B3C07E70041C184 /* WireGuard.h */; };
+		38B8A5562B3DF9B60041C184 /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B8A5542B3DF9B60041C184 /* ringlogger.h */; };
+		38B8A5572B3DF9B60041C184 /* ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B8A5542B3DF9B60041C184 /* ringlogger.h */; };
+		38B8A5582B3DF9B60041C184 /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 38B8A5552B3DF9B60041C184 /* ringlogger.c */; };
+		38B8A5592B3DF9B60041C184 /* ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 38B8A5552B3DF9B60041C184 /* ringlogger.c */; };
+		38B8A55C2B3DF9EA0041C184 /* test_ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B8A55A2B3DF9EA0041C184 /* test_ringlogger.h */; };
+		38B8A55D2B3DF9EA0041C184 /* test_ringlogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 38B8A55A2B3DF9EA0041C184 /* test_ringlogger.h */; };
+		38B8A55E2B3DF9EA0041C184 /* test_ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 38B8A55B2B3DF9EA0041C184 /* test_ringlogger.c */; };
+		38B8A55F2B3DF9EA0041C184 /* test_ringlogger.c in Sources */ = {isa = PBXBuildFile; fileRef = 38B8A55B2B3DF9EA0041C184 /* test_ringlogger.c */; };
 		38CC50362B3AE1B60021606C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50352B3AE1B60021606C /* APIConstants.swift */; };
 		38CC50372B3AE1B60021606C /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50352B3AE1B60021606C /* APIConstants.swift */; };
 		38CC50392B3AE1D40021606C /* HttpRequestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CC50382B3AE1D40021606C /* HttpRequestHelper.swift */; };
@@ -125,6 +135,11 @@
 /* Begin PBXFileReference section */
 		23187DED292E8F7A00ED302A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		23916CCE28378B1F0046A972 /* build_framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_framework.sh; sourceTree = "<group>"; };
+		38B8A46A2B3C07E70041C184 /* WireGuard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WireGuard.h; sourceTree = "<group>"; };
+		38B8A5542B3DF9B60041C184 /* ringlogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ringlogger.h; sourceTree = "<group>"; };
+		38B8A5552B3DF9B60041C184 /* ringlogger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = ringlogger.c; sourceTree = "<group>"; };
+		38B8A55A2B3DF9EA0041C184 /* test_ringlogger.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test_ringlogger.h; sourceTree = "<group>"; };
+		38B8A55B2B3DF9EA0041C184 /* test_ringlogger.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = test_ringlogger.c; sourceTree = "<group>"; };
 		38CC50352B3AE1B60021606C /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		38CC50382B3AE1D40021606C /* HttpRequestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequestHelper.swift; sourceTree = "<group>"; };
 		38CC503B2B3AE1EC0021606C /* VPNService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNService.swift; sourceTree = "<group>"; };
@@ -238,6 +253,7 @@
 				38CC51172B3AFFEA0021606C /* key.h */,
 				38CC51182B3AFFEA0021606C /* key.c */,
 				38CC511D2B3B01F10021606C /* WireGuardKitC.h */,
+				38B8A46A2B3C07E70041C184 /* WireGuard.h */,
 			);
 			path = WireGuardKitC;
 			sourceTree = "<group>";
@@ -287,6 +303,10 @@
 			isa = PBXGroup;
 			children = (
 				DF3A37812AC59EAB00B9729B /* Logger.swift */,
+				38B8A5542B3DF9B60041C184 /* ringlogger.h */,
+				38B8A5552B3DF9B60041C184 /* ringlogger.c */,
+				38B8A55A2B3DF9EA0041C184 /* test_ringlogger.h */,
+				38B8A55B2B3DF9EA0041C184 /* test_ringlogger.c */,
 			);
 			path = Logging;
 			sourceTree = "<group>";
@@ -355,9 +375,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CC51192B3AFFEA0021606C /* key.h in Headers */,
+				38B8A46B2B3C07E70041C184 /* WireGuard.h in Headers */,
 				38CC506D2B3AE8510021606C /* x25519.h in Headers */,
 				DFCEC34E2A1CB91300DD2E1D /* SHWireGuardKit.h in Headers */,
 				38CC511E2B3B01F10021606C /* WireGuardKitC.h in Headers */,
+				38B8A5562B3DF9B60041C184 /* ringlogger.h in Headers */,
+				38B8A55C2B3DF9EA0041C184 /* test_ringlogger.h in Headers */,
 				DF487ED22A16472D007C1A7D /* SHWireGuardKitmacOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,9 +390,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				38CC511A2B3AFFEA0021606C /* key.h in Headers */,
+				38B8A46C2B3C07E70041C184 /* WireGuard.h in Headers */,
 				DFCEC34D2A1CB91100DD2E1D /* SHWireGuardKit.h in Headers */,
 				38CC506E2B3AE8510021606C /* x25519.h in Headers */,
 				38CC511F2B3B01F10021606C /* WireGuardKitC.h in Headers */,
+				38B8A5572B3DF9B60041C184 /* ringlogger.h in Headers */,
+				38B8A55D2B3DF9EA0041C184 /* test_ringlogger.h in Headers */,
 				DF487F042A164B41007C1A7D /* SHWireGuardKitiOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,10 +543,12 @@
 				38CC50662B3AE7360021606C /* Curve25519.swift in Sources */,
 				38CC50512B3AE2EC0021606C /* TunnelStatus.swift in Sources */,
 				DF3A37992AC59FE800B9729B /* InterfaceConfiguration.swift in Sources */,
+				38B8A55E2B3DF9EA0041C184 /* test_ringlogger.c in Sources */,
 				DF3A37952AC59FE800B9729B /* IPAddressRange.swift in Sources */,
 				38CC503C2B3AE1EC0021606C /* VPNService.swift in Sources */,
 				38CC504B2B3AE2B40021606C /* ActivateOnDemandOption.swift in Sources */,
 				DF3A37972AC59FE800B9729B /* DNSResolver.swift in Sources */,
+				38B8A5582B3DF9B60041C184 /* ringlogger.c in Sources */,
 				38CC50632B3AE7030021606C /* VPNHelpers.swift in Sources */,
 				38CC505D2B3AE60A0021606C /* WireGuardConstanst.swift in Sources */,
 				DF3A379B2AC59FE800B9729B /* PeerConfiguration.swift in Sources */,
@@ -566,10 +594,12 @@
 				38CC50522B3AE2EC0021606C /* TunnelStatus.swift in Sources */,
 				38CC50402B3AE20D0021606C /* VPNManager.swift in Sources */,
 				DF3A37A52AC59FEA00B9729B /* InterfaceConfiguration.swift in Sources */,
+				38B8A55F2B3DF9EA0041C184 /* test_ringlogger.c in Sources */,
 				DF3A37A12AC59FEA00B9729B /* IPAddressRange.swift in Sources */,
 				38CC503D2B3AE1EC0021606C /* VPNService.swift in Sources */,
 				38CC504C2B3AE2B40021606C /* ActivateOnDemandOption.swift in Sources */,
 				DF3A37A32AC59FEA00B9729B /* DNSResolver.swift in Sources */,
+				38B8A5592B3DF9B60041C184 /* ringlogger.c in Sources */,
 				38CC50642B3AE7030021606C /* VPNHelpers.swift in Sources */,
 				38CC505E2B3AE60A0021606C /* WireGuardConstanst.swift in Sources */,
 				DF3A37A72AC59FEA00B9729B /* PeerConfiguration.swift in Sources */,
