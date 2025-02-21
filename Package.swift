@@ -19,8 +19,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "SHWireGuardKit",
-            url: "https://github.com/AbhishekChoudhary4/Safehouse-bodyguard-swift6-update/releases/download/1.0.0/Safehouse-bodyguard-swift6-update.zip",
-            checksum: "a779750fd65b74e466b6a6d98c30029632754f9a6f942e32993d331d5037f0f1"
+            url: "https://github.com/safehousetech/safehouse-bodyguard-swift6-update/releases/download/1.0.0/Safehouse-bodyguard-swift6-update.zip",
+            checksum: "708febe2a5b92147ac8ea791bded67d0db670a4e14d9a567f99ff951bf647155"
         )
     ]
 )
