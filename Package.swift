@@ -1,8 +1,7 @@
-// swift-tools-version:5.8
+// swift-tools-version:6.0
 //
 //  Package.swift
 //  SHWireGuardKit
-//
 //
 
 import PackageDescription
@@ -14,7 +13,10 @@ let package = Package(
         .iOS(.v12)
     ],
     products: [
-        .library(name: "SHWireGuardKit", targets: ["SHWireGuardKit"])
+        .library(
+            name: "SHWireGuardKit",
+            targets: ["SHWireGuardKit"]
+        )
     ],
     targets: [
         .binaryTarget(
@@ -24,6 +26,5 @@ let package = Package(
         )
     ]
 )
-
 //https://github.com/safehousetech/SHWireGuardKit/releases/download/1.0.0/SHWireGuardKit.xcframework.zip
 

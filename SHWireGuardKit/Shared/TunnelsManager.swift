@@ -115,6 +115,7 @@ public class TunnelsManager {
             tunnelManagers.remove(at: index)
           }
         }
+          Keychain
         Keychain.deleteReferences(except: refs)
         #if os(iOS)
           RecentTunnelsTracker.cleanupTunnels(except: tunnelNames)
