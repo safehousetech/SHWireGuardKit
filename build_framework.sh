@@ -1,35 +1,57 @@
 #!/bin/bash
-set -e
- 
-KIT=SHWireGuardKit
-# clear previous build folder if it exist
-rm -rf build
- 
-# remove the old copy of the xcframework if it already exists
-rm -rf ./*.xcframework ./*.xcframework.zip
- 
-xcodebuild -sdk iphonesimulator -target "${KIT}iOS"
-xcodebuild -sdk iphoneos -target "${KIT}iOS"
-xcodebuild -sdk macosx -target "${KIT}macOS"
- 
-# create variables for the path to each respective framework
-ios_fwpath="$PWD/build/Release-iphoneos/${KIT}.framework"
-sim_fwpath="$PWD/build/Release-iphonesimulator/${KIT}.framework"
-mac_path="$PWD/build/Release/${KIT}.framework"
- 
-# create the xcframework
-xcodebuild -create-xcframework -framework "$ios_fwpath" -framework "$sim_fwpath" -framework "$mac_path" -output "${KIT}.xcframework"
- 
-printf "\n\n"
-printf "Proccesing SwiftPM artifacts\n"
- 
-printf "Creating .zip archive...\n"
-# create .zip of the framework for SwiftPM
-ditto -c -k --sequesterRsrc --keepParent "./${KIT}.xcframework" "${KIT}.xcframework.zip"
- 
-printf "\n"
-printf "SwiftPM .zip checksum:\n"
-# get hash checksum for SwiftPM
-swift package compute-checksum "${KIT}.xcframework.zip"
- 
-open -R "${KIT}.xcframework.zip"
+
+set -euo pipefail
+
+KIT="SHWireGuardKit"
+FRAMEWORK_NAME="${KIT}.framework"
+XCFRAMEWORK_NAME="${KIT}.xcframework"
+ZIP_NAME="${XCFRAMEWORK_NAME}.zip"
+BUILD_DIR="$PWD/build"
+
+echo "🧹 Cleaning previous builds..."
+rm -rf "$BUILD_DIR" ./*.xcframework ./*.xcframework.zip
+
+# 🏗️ Build function
+build_framework() {
+  local scheme=$1
+  local sdk=$2
+  local archs=$3
+
+  echo "📦 Building $scheme for $sdk..."
+
+  xcodebuild archive \
+    -scheme "$scheme" \
+    -sdk "$sdk" \
+    -archivePath "$BUILD_DIR/$scheme-$sdk.xcarchive" \
+    -configuration Release \
+    -destination "generic/platform=${sdk}" \
+    SKIP_INSTALL=NO \
+    BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
+    ARCHS="$archs" \
+    clean archive
+}
+
+# 🔨 Build all platforms
+build_framework "${KIT}iOS" iphoneos "arm64"
+build_framework "${KIT}iOS" iphonesimulator "arm64 x86_64"
+build_framework "${KIT}macOS" macosx "arm64 x86_64"
+
+# 🧰 Assemble frameworks for xcframework
+echo "📦 Creating XCFramework..."
+
+xcodebuild -create-xcframework \
+  -framework "$BUILD_DIR/${KIT}iOS-iphoneos.xcarchive/Products/Library/Frameworks/$FRAMEWORK_NAME" \
+  -framework "$BUILD_DIR/${KIT}iOS-iphonesimulator.xcarchive/Products/Library/Frameworks/$FRAMEWORK_NAME" \
+  -framework "$BUILD_DIR/${KIT}macOS-macosx.xcarchive/Products/Library/Frameworks/$FRAMEWORK_NAME" \
+  -output "$XCFRAMEWORK_NAME"
+
+# 📁 Zip for SwiftPM
+echo "📦 Packaging as .zip for SwiftPM..."
+ditto -c -k --sequesterRsrc --keepParent "$XCFRAMEWORK_NAME" "$ZIP_NAME"
+
+# 🔐 Checksum
+echo "🔐 SwiftPM Checksum:"
+swift package compute-checksum "$ZIP_NAME"
+
+echo "✅ All done!"
+open -R "$ZIP_NAME"

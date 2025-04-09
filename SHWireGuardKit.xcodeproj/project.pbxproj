@@ -93,6 +93,8 @@
 /* Begin PBXFileReference section */
 		23187DED292E8F7A00ED302A /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
 		23916CCE28378B1F0046A972 /* build_framework.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = build_framework.sh; sourceTree = "<group>"; };
+		26BB8E152DA675820007E468 /* libwg-go.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "libwg-go.h"; sourceTree = "<group>"; };
+		26BB8E162DA675820007E468 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libwg-go.a"; sourceTree = "<group>"; };
 		DF0277CE2AC4326500539545 /* libwg-go.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libwg-go.a"; path = "../../Library/Developer/Xcode/DerivedData/SHWireGuardKit-bjrqdoedgdtnygceezyaalbhmdon/Build/Products/Debug-iphoneos/libwg-go.a"; sourceTree = "<group>"; };
 		DF3A37772AC59EAB00B9729B /* FileManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+Extension.swift"; sourceTree = "<group>"; };
 		DF3A37782AC59EAB00B9729B /* Keychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keychain.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				DF487ECE2A16428F007C1A7D /* SHWireGuardKit */,
 				DF487F022A164B0A007C1A7D /* SHWireGuardKitiOS */,
 				DF487EC52A163CD7007C1A7D /* SHWireGuardKitmacOS */,
+				26BB8E142DA675640007E468 /* WireGuardDependancies */,
 				2302A68727C6B153009F8664 /* Products */,
 				23C354D327DF55490063D69B /* Frameworks */,
 			);
@@ -181,6 +184,15 @@
 				DF7C476E2A20BF3000949CB5 /* libwg-go.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26BB8E142DA675640007E468 /* WireGuardDependancies */ = {
+			isa = PBXGroup;
+			children = (
+				26BB8E152DA675820007E468 /* libwg-go.h */,
+				26BB8E162DA675820007E468 /* libwg-go.a */,
+			);
+			path = WireGuardDependancies;
 			sourceTree = "<group>";
 		};
 		DF3A37762AC59EAB00B9729B /* Shared */ = {
@@ -765,6 +777,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/WireGuardDependancies",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
@@ -804,6 +821,11 @@
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/WireGuardDependancies",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MARKETING_VERSION = 1.0.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
@@ -837,15 +859,21 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/WireGuardDependancies",
+				);
 				MARKETING_VERSION = 1.0.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.safehouseapp.WireGuardKitiOS;
 				PRODUCT_NAME = SHWireGuardKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -877,15 +905,21 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/WireGuardDependancies",
+				);
 				MARKETING_VERSION = 1.0.0;
 				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.safehouseapp.SHWireGuardKitiOS;
 				PRODUCT_NAME = SHWireGuardKit;
 				PROVISIONING_PROFILE_SPECIFIER = "";
