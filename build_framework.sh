@@ -1,57 +1,35 @@
 #!/bin/bash
+set -e
 
-set -euo pipefail
+KIT=SHWireGuardKit
 
-KIT="SHWireGuardKit"
-FRAMEWORK_NAME="${KIT}.framework"
-XCFRAMEWORK_NAME="${KIT}.xcframework"
-ZIP_NAME="${XCFRAMEWORK_NAME}.zip"
-BUILD_DIR="$PWD/build"
+echo "Cleaning old builds..."
+rm -rf build ./*.xcframework ./*.xcframework.zip
 
-echo "🧹 Cleaning previous builds..."
-rm -rf "$BUILD_DIR" ./*.xcframework ./*.xcframework.zip
+echo "Building for iOS device..."
+xcodebuild -sdk iphoneos -configuration Release -target "${KIT}iOS"
 
-# 🏗️ Build function
-build_framework() {
-  local scheme=$1
-  local sdk=$2
-  local archs=$3
+echo "Building for macOS..."
+xcodebuild -sdk macosx -configuration Release -target "${KIT}macOS"
 
-  echo "📦 Building $scheme for $sdk..."
+ios_fwpath="$PWD/build/Release-iphoneos/${KIT}.framework"
+mac_path="$PWD/build/Release/${KIT}.framework"
 
-  xcodebuild archive \
-    -scheme "$scheme" \
-    -sdk "$sdk" \
-    -archivePath "$BUILD_DIR/$scheme-$sdk.xcarchive" \
-    -configuration Release \
-    -destination "generic/platform=${sdk}" \
-    SKIP_INSTALL=NO \
-    BUILD_LIBRARY_FOR_DISTRIBUTION=YES \
-    ARCHS="$archs" \
-    clean archive
-}
+echo "Checking framework outputs..."
+[ -d "$ios_fwpath" ] || { echo "iOS framework not found at $ios_fwpath"; exit 1; }
+[ -d "$mac_path" ] || { echo "macOS framework not found at $mac_path"; exit 1; }
 
-# 🔨 Build all platforms
-build_framework "${KIT}iOS" iphoneos "arm64"
-build_framework "${KIT}iOS" iphonesimulator "arm64 x86_64"
-build_framework "${KIT}macOS" macosx "arm64 x86_64"
-
-# 🧰 Assemble frameworks for xcframework
-echo "📦 Creating XCFramework..."
-
+echo "Creating XCFramework..."
 xcodebuild -create-xcframework \
-  -framework "$BUILD_DIR/${KIT}iOS-iphoneos.xcarchive/Products/Library/Frameworks/$FRAMEWORK_NAME" \
-  -framework "$BUILD_DIR/${KIT}iOS-iphonesimulator.xcarchive/Products/Library/Frameworks/$FRAMEWORK_NAME" \
-  -framework "$BUILD_DIR/${KIT}macOS-macosx.xcarchive/Products/Library/Frameworks/$FRAMEWORK_NAME" \
-  -output "$XCFRAMEWORK_NAME"
+  -framework "$ios_fwpath" \
+  -framework "$mac_path" \
+  -output "${KIT}.xcframework"
 
-# 📁 Zip for SwiftPM
-echo "📦 Packaging as .zip for SwiftPM..."
-ditto -c -k --sequesterRsrc --keepParent "$XCFRAMEWORK_NAME" "$ZIP_NAME"
+echo "Zipping XCFramework..."
+ditto -c -k --sequesterRsrc --keepParent "${KIT}.xcframework" "${KIT}.xcframework.zip"
 
-# 🔐 Checksum
-echo "🔐 SwiftPM Checksum:"
-swift package compute-checksum "$ZIP_NAME"
+echo "SwiftPM checksum:"
+swift package compute-checksum "${KIT}.xcframework.zip"
 
-echo "✅ All done!"
-open -R "$ZIP_NAME"
+echo "Done. Opening folder..."
+open -R "${KIT}.xcframework.zip"
