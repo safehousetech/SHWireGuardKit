@@ -2,3 +2,6 @@
 	path = wireguard
 	url = https://github.com/safehousetech/wireguard-apple.git
 	branch = main
+[submodule "wireguard-go"]
+	path = wireguard-go
+	url = https://github.com/safehousetech/wireguard-go.git
