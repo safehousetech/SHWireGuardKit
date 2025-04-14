@@ -2,34 +2,34 @@
 set -e
 
 KIT=SHWireGuardKit
-# clear previous build folder if it exist
-rm -rf build
 
-# remove the old copy of the xcframework if it already exists
-rm -rf ./*.xcframework ./*.xcframework.zip
+echo "Cleaning old builds..."
+rm -rf build ./*.xcframework ./*.xcframework.zip
 
-xcodebuild -sdk iphonesimulator -target "${KIT}iOS"
-xcodebuild -sdk iphoneos -target "${KIT}iOS"
-xcodebuild -sdk macosx -target "${KIT}macOS"
+echo "Building for iOS device..."
+xcodebuild -sdk iphoneos -configuration Release -target "${KIT}iOS"
 
-# create variables for the path to each respective framework
+echo "Building for macOS..."
+xcodebuild -sdk macosx -configuration Release -target "${KIT}macOS"
+
 ios_fwpath="$PWD/build/Release-iphoneos/${KIT}.framework"
-sim_fwpath="$PWD/build/Release-iphonesimulator/${KIT}.framework"
 mac_path="$PWD/build/Release/${KIT}.framework"
 
-# create the xcframework
-xcodebuild -create-xcframework -framework "$ios_fwpath" -framework "$sim_fwpath" -framework "$mac_path" -output "${KIT}.xcframework"
+echo "Checking framework outputs..."
+[ -d "$ios_fwpath" ] || { echo "iOS framework not found at $ios_fwpath"; exit 1; }
+[ -d "$mac_path" ] || { echo "macOS framework not found at $mac_path"; exit 1; }
 
-printf "\n\n"
-printf "Proccesing SwiftPM artifacts\n"
+echo "Creating XCFramework..."
+xcodebuild -create-xcframework \
+  -framework "$ios_fwpath" \
+  -framework "$mac_path" \
+  -output "${KIT}.xcframework"
 
-printf "Creating .zip archive...\n"
-# create .zip of the framework for SwiftPM
-ditto -c -k --sequesterRsrc --keepParent "./${KIT}.xcframework" "${KIT}.xcframework.zip"
+echo "Zipping XCFramework..."
+ditto -c -k --sequesterRsrc --keepParent "${KIT}.xcframework" "${KIT}.xcframework.zip"
 
-printf "\n"
-printf "SwiftPM .zip checksum:\n"
-# get hash checksum for SwiftPM
+echo "SwiftPM checksum:"
 swift package compute-checksum "${KIT}.xcframework.zip"
 
+echo "Done. Opening folder..."
 open -R "${KIT}.xcframework.zip"

@@ -18,7 +18,7 @@ extension NETunnelProviderProtocol {
         guard let name = tunnelConfiguration.name else { return nil }
         guard let appId = Bundle.main.bundleIdentifier else { return nil }
         providerBundleIdentifier = "\(appId).network-extension"
-        passwordReference = Keychain.makeReference(containing: tunnelConfiguration.asWgQuickConfig(), called: name, previouslyReferencedBy: old?.passwordReference)
+        passwordReference = KeychainManager.makeReference(containing: tunnelConfiguration.asWgQuickConfig(), called: name, previouslyReferencedBy: old?.passwordReference)
         if passwordReference == nil {
             return nil
         }
@@ -38,7 +38,7 @@ extension NETunnelProviderProtocol {
 
     func asTunnelConfiguration(called name: String? = nil) -> TunnelConfiguration? {
         if let passwordReference = passwordReference,
-            let config = Keychain.openReference(called: passwordReference) {
+            let config = KeychainManager.openReference(called: passwordReference) {
             return try? TunnelConfiguration(fromWgQuickConfig: config, called: name)
         }
         if let oldConfig = providerConfiguration?["WgQuickConfig"] as? String {
@@ -49,12 +49,12 @@ extension NETunnelProviderProtocol {
 
     func destroyConfigurationReference() {
         guard let ref = passwordReference else { return }
-        Keychain.deleteReference(called: ref)
+        KeychainManager.deleteReference(called: ref)
     }
 
     func verifyConfigurationReference() -> Bool {
         guard let ref = passwordReference else { return false }
-        return Keychain.verifyReference(called: ref)
+        return KeychainManager.verifyReference(called: ref)
     }
 
     @discardableResult
@@ -73,7 +73,7 @@ extension NETunnelProviderProtocol {
             #endif
             guard passwordReference == nil else { return true }
             wg_log(.info, message: "Migrating tunnel configuration '\(name)'")
-            passwordReference = Keychain.makeReference(containing: oldConfig, called: name)
+            passwordReference = KeychainManager.makeReference(containing: oldConfig, called: name)
             return true
         }
         #if os(macOS)

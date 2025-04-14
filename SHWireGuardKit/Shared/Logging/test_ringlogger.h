@@ -5,9 +5,9 @@
 //  Created by Abhishek Choudhary on 29/12/23.
 //
 
-#ifndef test_ringlogger_h
-#define test_ringlogger_h
+#ifndef test_RINGLOGGER_H
+#define test_RINGLOGGER_H
 
 #include <stdio.h>
 
-#endif /* test_ringlogger_h */
+#endif /* test_RINGLOGGER_H */

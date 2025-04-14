@@ -5,10 +5,9 @@
 //  Created by Abhishek Choudhary on 26/12/23.
 //
 
-
-#include "key.h"
-#include "x25519.h"
-
+#import <SHWireGuardKit/key.h>
+#import <SHWireGuardKit/x25519.h>
+#import <sys/types.h>
 /* From <sys/kern_control.h> */
 #define CTLIOCGINFO 0xc0644e03UL
 struct ctl_info {
