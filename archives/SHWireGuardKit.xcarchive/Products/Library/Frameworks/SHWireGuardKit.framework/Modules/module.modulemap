@@ -1,0 +1,11 @@
+framework module SHWireGuardKit {
+  umbrella header "SHWireGuardKit.h"
+  export *
+
+  module * { export * }
+}
+
+module SHWireGuardKit.Swift {
+  header "SHWireGuardKit-Swift.h"
+  requires objc
+}
